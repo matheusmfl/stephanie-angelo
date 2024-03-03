@@ -24,8 +24,8 @@ export function ProcedureCount() {
   // }, [controls, isInView])
 
   return (
-    <div className="px-[120px] py-16 bg-[#8F7D5E] flex flex-col gap-6">
-      <div className="grid grid-cols-2 gap-6">
+    <div className="px-6 lg:px-[120px] py-12 lg:py-16 bg-[#8F7D5E] flex flex-col gap-6">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6">
         <div className="flex flex-col ">
           {/* <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls}>
             {isInView ? animationConfig.end.toFixed(0) : 0}
@@ -49,7 +49,7 @@ export function ProcedureCount() {
       </div>
       <div className="w-full flex items-center justify-center">
         <button className="text-base leading-[24px] h-[48px] max-w-[280px] font-medium border border-[#BAB09B] rounded-sm text-[#4D4D4D] bg-[#F7F1E7] w-full py-3 px-12 ">
-          Agende meu horário
+          Agende seu horário
         </button>
       </div>
     </div>
