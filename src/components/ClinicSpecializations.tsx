@@ -23,7 +23,7 @@ const iconMap: Record<ICardsProps['type'], StaticImageData> = {
 }
 const CardComponent = ({ title, subtitle, type }: ICardsProps) => {
   return (
-    <div className="flex flex-col gap-8 items-center md:w-[346px]">
+    <div className="flex flex-col gap-8 items-center md:w-[326px]">
       <Image
         src={iconMap[type]}
         alt="Card"
@@ -47,15 +47,15 @@ const CardComponent = ({ title, subtitle, type }: ICardsProps) => {
 export function ClinicSpecializations() {
   return (
     <>
-      <section className="flex flex-col xl:p-20 py-10 px-6 gap-12 xl:max-h-[1136px] bg-clinic-specialization overflow-hidden  ">
-        <div className="flex items-center flex-col gap-6 w-full">
+      <section className="flex flex-col xl:p-20 py-10 px-6 gap-12 z-10 bg-clinic-specialization overflow-hidden  ">
+        <div className="flex items-center z-50 flex-col gap-6 w-full">
           <h2 className="font-normal text-center text-[32px] xl:text-[48px] text-[#8F7D5E]">
             Tratamentos da clínica
           </h2>
 
           <Image
             src={separator}
-            className="xl:w-full w-[200px] object-cover hidden xl:block"
+            className="xl:w-full z-20 object-cover hidden xl:block"
             alt="Separador de página"
           />
 
@@ -99,7 +99,8 @@ export function ClinicSpecializations() {
           <Image
             src={asset}
             alt="Img static"
-            className="absolute -z-10 overflow-visible h-full w-full object-cover xl:-left-20 xl:-bottom-20"
+            fill={true}
+            className="-z-30 overflow-visible h-full w-full object-cover xl:-translate-x-20 xl:-bottom-20"
           />
         </div>
       </section>
