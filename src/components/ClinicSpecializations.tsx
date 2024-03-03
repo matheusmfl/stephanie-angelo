@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from 'next/image'
 import separator from '@/assets/separator.svg'
+import mobileSeparator from '@/assets/mobileSeparator.svg'
 import card01Img from '@/assets/card01.webp'
 import card02Img from '@/assets/card02.webp'
 import card03Img from '@/assets/card03.webp'
@@ -22,7 +23,7 @@ const iconMap: Record<ICardsProps['type'], StaticImageData> = {
 }
 const CardComponent = ({ title, subtitle, type }: ICardsProps) => {
   return (
-    <div className="flex flex-col gap-8 items-center w-[346px]">
+    <div className="flex flex-col gap-8 items-center md:w-[346px]">
       <Image
         src={iconMap[type]}
         alt="Card"
@@ -46,13 +47,23 @@ const CardComponent = ({ title, subtitle, type }: ICardsProps) => {
 export function ClinicSpecializations() {
   return (
     <>
-      <section className="flex flex-col p-20 gap-12 max-h-[1136px] bg-clinic-specialization overflow-hidden  ">
+      <section className="flex flex-col xl:p-20 py-10 px-6 gap-12 xl:max-h-[1136px] bg-clinic-specialization overflow-hidden  ">
         <div className="flex items-center flex-col gap-6 w-full">
-          <h2 className="font-normal text-center text-[48px] text-[#8F7D5E]">
+          <h2 className="font-normal text-center text-[32px] xl:text-[48px] text-[#8F7D5E]">
             Tratamentos da clínica
           </h2>
 
-          <Image src={separator} alt="Separador de página" />
+          <Image
+            src={separator}
+            className="xl:w-full w-[200px] object-cover hidden xl:block"
+            alt="Separador de página"
+          />
+
+          <Image
+            src={mobileSeparator}
+            className="xl:w-full  object-cover  xl:hidden"
+            alt="Separador de página"
+          />
         </div>
 
         <div className="flex flex-row flex-wrap gap-20 items-center justify-center z-20 relative">
@@ -88,7 +99,7 @@ export function ClinicSpecializations() {
           <Image
             src={asset}
             alt="Img static"
-            className="absolute -z-10 -left-20 -bottom-20"
+            className="absolute -z-10 overflow-visible h-full w-full object-cover xl:-left-20 xl:-bottom-20"
           />
         </div>
       </section>
