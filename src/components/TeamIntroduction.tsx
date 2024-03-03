@@ -3,7 +3,7 @@ import teamMembers from '@/assets/team-introduction.jpeg'
 
 export function TeamIntroduction() {
   return (
-    <div className="grid grid-cols-2 bg-red-50">
+    <div className="flex flex-col lg:grid lg:grid-cols-2 bg-red-50">
       <div>
         <Image
           src={teamMembers}
@@ -13,8 +13,8 @@ export function TeamIntroduction() {
           className="object-cover object-center"
         />
       </div>
-      <div className="px-20 h-full flex flex-col justify-center gap-6">
-        <h2 className="text-[48px] font-normal leading-[58px] text-[#4D4D4D]">
+      <div className="lg:px-20 px-6 py-12 lg:py-0 h-full flex flex-col justify-center gap-6">
+        <h2 className="text-[32px] lg:text-[48px] font-normal leading-[58px] text-[#4D4D4D]">
           Estamos prontos para te receber
         </h2>
 
