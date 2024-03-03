@@ -23,6 +23,7 @@ const config = {
         hero: 'url(../assets/stephanie-bg-hero.webp)',
         'clinic-specialization':
           'linear-gradient(180deg, #F4F1F0 0%, #D2CBBE 100%)',
+        footer: ' linear-gradient(0deg, #D2CBBD 0%, #D6D0C8 100%);',
       },
       boxShadow: {
         default: ' 0px 8px 16px 0px #0000003D ',
