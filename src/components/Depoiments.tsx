@@ -13,7 +13,7 @@ import depoimento08 from '@/assets/depoimento08.jpeg'
 export function Depoiments() {
   return (
     <div className="lg:p-20 flex flex-col gap-12 bg-[#E8E5E1]">
-      <div className="flex items-center flex-col gap-6 w-full px-6 py-12 lg:px-0 lg:py-0">
+      <div className="flex items-center flex-col gap-6 w-full px-6 pt-12 pb-4 lg:px-0 lg:py-0">
         <h2 className="font-normal text-center text-[32px] lg:text-[48px] text-[#8F7D5E]">
           Depoimentos de vidas transformadas
         </h2>
@@ -81,6 +81,11 @@ export function Depoiments() {
             />
           </div>
         </div>
+      </div>
+      <div className="px-6 pb-8">
+        <button className="text-base leading-[24px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-button h-full w-full py-3 px-12 ">
+          Agende seu horário
+        </button>
       </div>
     </div>
   )
