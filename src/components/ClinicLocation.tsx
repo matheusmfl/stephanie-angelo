@@ -3,9 +3,9 @@ import stephanie from '@/assets/bg-clinic-location.jpeg'
 
 export function ClinicLocation() {
   return (
-    <div className="grid grid-cols-2 h-full overflow-hidden">
-      <div className="bg-slate-100 flex items-center  w-full h-full ">
-        <div className="flex flex-col gap-6 px-20">
+    <div className="xl:grid xl:grid-cols-2 flex flex-col-reverse h-full overflow-hidden">
+      <div className="bg-slate-100 flex items-center  w-full h-full py-12 lg:py-0 px-6 lg:px-0 ">
+        <div className="flex flex-col gap-6 lg:px-20">
           <h2 className="text-[48px] font-normal leading-[58px] text-[#4D4D4D]">
             Localização privilegiada
           </h2>
