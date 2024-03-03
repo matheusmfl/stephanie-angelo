@@ -100,7 +100,7 @@ export function ClinicSpecializations() {
             src={asset}
             alt="Img static"
             fill={true}
-            className="-z-30 overflow-visible h-full w-full object-cover -translate-x-20 xl:-bottom-20"
+            className="-z-30 overflow-visible h-full w-full object-cover -translate-x-5 xl:-translate-20 xl:-bottom-20"
           />
         </div>
       </section>
