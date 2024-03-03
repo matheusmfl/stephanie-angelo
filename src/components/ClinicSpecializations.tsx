@@ -47,7 +47,13 @@ const CardComponent = ({ title, subtitle, type }: ICardsProps) => {
 export function ClinicSpecializations() {
   return (
     <>
-      <section className="flex flex-col xl:p-20 py-10 px-6 gap-12 z-10 bg-clinic-specialization overflow-hidden  ">
+      <section className="flex relative flex-col xl:p-20 py-10 px-6 gap-12 z-10 bg-clinic-specialization overflow-hidden  ">
+        <Image
+          src={asset}
+          alt="Img static"
+          fill={true}
+          className="-z-30 overflow-visible h-full w-full object-cover  xl:-translate-20 xl:-bottom-20"
+        />
         <div className="flex items-center z-50 flex-col gap-6 w-full">
           <h2 className="font-normal text-center text-[32px] xl:text-[48px] text-[#8F7D5E]">
             Tratamentos da clínica
@@ -95,12 +101,6 @@ export function ClinicSpecializations() {
             title="Limpeza de pele"
             subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
             type="card05"
-          />
-          <Image
-            src={asset}
-            alt="Img static"
-            fill={true}
-            className="-z-30 overflow-visible h-full w-full object-cover -translate-x-5 xl:-translate-20 xl:-bottom-20"
           />
         </div>
       </section>
