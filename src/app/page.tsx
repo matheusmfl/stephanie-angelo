@@ -1,6 +1,8 @@
+import { AboutCourses } from '@/components/AboutCourses'
 import { AboutStephanie } from '@/components/AboutStephanie'
 import { ClinicLocation } from '@/components/ClinicLocation'
 import { ClinicSpecializations } from '@/components/ClinicSpecializations'
+import { Depoiments } from '@/components/Depoiments'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { ProcedureCount } from '@/components/ProcedureCount'
@@ -16,6 +18,8 @@ export default function Home() {
       <ClinicLocation />
       <ProcedureCount />
       <TeamIntroduction />
+      <AboutCourses />
+      <Depoiments />
     </div>
   )
 }
