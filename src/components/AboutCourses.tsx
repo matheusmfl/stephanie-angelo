@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export function AboutCourses() {
   return (
-    <div className="grid grid-cols-2 bg-slate-50">
-      <div className="relative h-[720px]">
+    <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 bg-slate-50">
+      <div className="relative h-[450px] lg:h-[720px]">
         <Image
           fill={true}
           placeholder="blur"
@@ -13,8 +13,8 @@ export function AboutCourses() {
           alt="Sobre nossos cursos"
         />
       </div>
-      <div className="px-20 h-full flex flex-col justify-center gap-6">
-        <h2 className="text-[48px] font-normal leading-[58px] text-[#4D4D4D]">
+      <div className="lg:px-20 px-6 py-12 lg:py-0 h-full flex flex-col justify-center gap-6">
+        <h2 className="text-[32px] lg:text-[48px] font-normal leading-[58px] text-[#4D4D4D]">
           Cursos ministrados por nossa clínica
         </h2>
 
@@ -24,7 +24,7 @@ export function AboutCourses() {
           ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
         </span>
 
-        <button className="text-base leading-[22px] text-center h-[48px] max-w-[450px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-button w-full py-3 px-10 ">
+        <button className="text-sm lg:text-base tracking-tighter lg:tracking-normal leading-[22px] text-center h-[48px] max-w-[450px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-button w-full py-3 px-3 lg:px-10 ">
           Confira a agenda para próximos cursos
         </button>
       </div>
