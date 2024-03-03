@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import separator from '@/assets/separator.svg'
+import separatorMobile from '@/assets/mobileSeparator.svg'
 import depoimento01 from '@/assets/depoimento01.jpeg'
 import depoimento02 from '@/assets/depoimento02.jpeg'
 import depoimento03 from '@/assets/depoimento03.jpeg'
@@ -11,16 +12,26 @@ import depoimento08 from '@/assets/depoimento08.jpeg'
 
 export function Depoiments() {
   return (
-    <div className="p-20 flex flex-col gap-12 bg-[#E8E5E1]">
-      <div className="flex items-center flex-col gap-6 w-full">
-        <h2 className="font-normal text-center text-[48px] text-[#8F7D5E]">
-          Tratamentos da clínica
+    <div className="lg:p-20 flex flex-col gap-12 bg-[#E8E5E1]">
+      <div className="flex items-center flex-col gap-6 w-full px-6 py-12 lg:px-0 lg:py-0">
+        <h2 className="font-normal text-center text-[32px] lg:text-[48px] text-[#8F7D5E]">
+          Depoimentos de vidas transformadas
         </h2>
 
-        <Image src={separator} alt="Separador de página" />
+        <Image
+          src={separator}
+          alt="Separador de página"
+          className="hidden lg:block"
+        />
+
+        <Image
+          src={separatorMobile}
+          alt="Separador da página"
+          className="lg:hidden"
+        />
       </div>
 
-      <div className="grid grid-cols-3 space-x-5 space-y-5">
+      <div className="flex flex-col gap-5 pb-5 lg:grid lg:grid-cols-3 lg:space-x-5 lg:space-y-5">
         <div className="flex flex-col gap-5">
           <Image
             src={depoimento01}
