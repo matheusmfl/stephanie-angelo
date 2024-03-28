@@ -83,7 +83,7 @@ export function Depoiments() {
         </div>
       </div>
       <div className="px-6 pb-8 flex items-center">
-        <button className="text-base leading-[24px] max-w-[356px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-button h-full w-full py-3 px-12 ">
+        <button className="text-base leading-[24px] max-w-[356px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] h-full w-full py-3 px-12 ">
           Agende seu horário
         </button>
       </div>

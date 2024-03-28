@@ -75,31 +75,31 @@ export function ClinicSpecializations() {
         <div className="flex flex-row flex-wrap gap-20 items-center justify-center z-20 relative">
           <CardComponent
             title="Harmonização facial"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+            subtitle="Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão"
             type="card01"
           />
 
           <CardComponent
             title="Harmonização corporal"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+            subtitle="Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes"
             type="card02"
           />
 
           <CardComponent
             title="Massoterapia"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+            subtitle="Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e terapêuticas"
             type="card03"
           />
 
           <CardComponent
             title="Jetbronze"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+            subtitle="O Jetbronze é um método seguro e eficaz de bronzeamento artificial que não causa danos à pele"
             type="card04"
           />
 
           <CardComponent
             title="Limpeza de pele"
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+            subtitle="Elimine impurezas, renove a sua pele e desfrute da maciez e saúde que ela merece"
             type="card05"
           />
         </div>

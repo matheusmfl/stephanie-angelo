@@ -14,17 +14,17 @@ export function AboutCourses() {
         />
       </div>
       <div className="lg:px-20 px-6 py-12 lg:py-0 h-full flex flex-col justify-center gap-6">
-        <h2 className="text-[32px] lg:text-[48px] font-normal leading-[58px] text-[#4D4D4D]">
+        <h2 className="text-[32px] lg:text-[48px] font-normal leading-[58px] text-[#8F7D5E]">
           Cursos ministrados por nossa clínica
         </h2>
 
         <span className="text-[18px] font-normal leading-[27px] text-[#4D4D4D]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+          São centenas de profissionais de estética treinados por nossos cursos
+          de referência. Confira depoimentos e a agenda para os próximos eventos
+          profissionalizantes.
         </span>
 
-        <button className="text-sm lg:text-base tracking-tighter lg:tracking-normal leading-[22px] text-center h-[48px] max-w-[450px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-button w-full py-3 px-3 lg:px-10 ">
+        <button className="text-sm lg:text-base tracking-tighter lg:tracking-normal leading-[22px] text-center h-[48px] max-w-[450px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] w-full py-3 px-3 lg:px-10 ">
           Confira a agenda para próximos cursos
         </button>
       </div>

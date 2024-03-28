@@ -14,17 +14,16 @@ export function TeamIntroduction() {
         />
       </div>
       <div className="lg:px-20 px-6 py-12 lg:py-0 h-full flex flex-col justify-center gap-6">
-        <h2 className="text-[32px] lg:text-[48px] font-normal leading-[58px] text-[#4D4D4D]">
-          Estamos prontos para te receber
+        <h2 className="text-[32px] lg:text-[48px] font-normal leading-[58px] text-[#8F7D5E]">
+          Prontos Para te Receber
         </h2>
 
         <span className="text-[18px] font-normal leading-[27px] text-[#4D4D4D]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+          Somos apaixonados por cuidar da saúde e o bem-estar estamos prontos
+          para oferecer as melhores experiências de beleza e autocuidado.
         </span>
 
-        <button className="text-base leading-[22px] text-center h-[48px] max-w-[355px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-button w-full py-3 px-10 ">
+        <button className="text-base leading-[22px] text-center h-[48px] max-w-[355px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] w-full py-3 px-10 ">
           Conheça nossos profissionais
         </button>
       </div>
