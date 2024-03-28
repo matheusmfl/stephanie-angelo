@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        button: 'linear-gradient(90deg, #8F7D5E 0%, #BAADA1 100%)',
+        button: '#8F7D5E',
         hero: 'url(../assets/stephanie-bg-hero.webp)',
         'clinic-specialization':
           'linear-gradient(180deg, #F4F1F0 0%, #D2CBBE 100%)',
