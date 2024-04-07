@@ -3,7 +3,6 @@ import { AboutStephanie } from '@/components/AboutStephanie'
 import { ClinicLocation } from '@/components/ClinicLocation'
 import { ClinicSpecializations } from '@/components/ClinicSpecializations'
 import { Depoiments } from '@/components/Depoiments'
-import { Footer } from '@/components/Footer'
 
 import { Hero } from '@/components/Hero'
 import { ProcedureCount } from '@/components/ProcedureCount'
@@ -20,7 +19,6 @@ export default function Home() {
       <TeamIntroduction />
       <AboutCourses />
       <Depoiments />
-      <Footer />
     </div>
   )
 }

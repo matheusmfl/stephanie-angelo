@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import stephanie from '@/assets/bg-clinic-location.jpeg'
 import { MapPin } from 'lucide-react'
+import { Button } from './ui/button'
 
 export function ClinicLocation() {
   return (
@@ -15,9 +16,7 @@ export function ClinicLocation() {
             botão abaixo e descubra a melhor trajeto para nossa clínica.
           </span>
 
-          <button className="text-base leading-[24px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] h-full w-full py-3 px-12 ">
-            Agende seu horário
-          </button>
+          <Button>Agende seu horário</Button>
         </div>
       </div>
 

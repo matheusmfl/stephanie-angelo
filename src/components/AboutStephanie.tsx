@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import stephanie from '@/assets/stephanie.jpeg'
 import textLogo from '@/assets/aboutStephanieTxt.svg'
+import { Button } from './ui/button'
 
 export function AboutStephanie() {
   return (
@@ -15,16 +16,14 @@ export function AboutStephanie() {
         />
       </div>
       <div className="bg-slate-100 flex items-center py-8 xl:py-0  w-full h-full">
-        <div className="flex flex-col gap-6 xl:px-20 px-6  ">
-          <Image src={textLogo} alt="" />
+        <div className="flex flex-col gap-6 xl:px-20 px-6 w-full  ">
+          <Image src={textLogo} alt="" className="object-cover lg:w-full" />
           <span className="text-[18px] font-normal leading-[27px] text-[#4D4D4D]">
             Conheça a trajetória de vida e carreira profissional inspiradora da
             Dra. Stéphanie Angelo.
           </span>
 
-          <button className="text-sm lg:max-w-[423px] tracking-tighter lg:text-base leading-[24px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] h-full w-full py-3 px-5 lg:px-12 ">
-            Leia mais sobre a Dra. Stéfanie Angelo
-          </button>
+          <Button>Leia mais sobre a Dra. Stéfanie Angelo</Button>
         </div>
       </div>
     </div>

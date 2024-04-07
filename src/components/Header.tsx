@@ -19,6 +19,7 @@ import {
 } from './ui/accordion'
 import { cn } from '@/lib/utils'
 import React from 'react'
+import Link from 'next/link'
 
 const aboutComponents: {
   title: string
@@ -73,9 +74,11 @@ const othersComponents: {
 export function Header() {
   return (
     <>
-      <header className="hidden lg:flex gap-8 py-5 px-20 bg-[#F4F1F0] w-screen">
+      <header className="hidden lg:flex gap-8 py-5 px-20 bg-[#F4F1F0] ">
         <div>
-          <Image src={logo} alt="Logotipo" />
+          <Link href={'/'}>
+            <Image src={logo} alt="Logotipo" />
+          </Link>
         </div>
 
         <NavigationMenuHeader />
@@ -89,7 +92,9 @@ export function Header() {
 
       <header className="lg:hidden flex items-center justify-between px-6 py-7">
         <div>
-          <Image src={logo} alt="Logotipo" />
+          <Link href={'/'}>
+            <Image src={logo} alt="Logotipo" />
+          </Link>
         </div>
 
         <Sheet>

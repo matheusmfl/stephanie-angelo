@@ -1,5 +1,6 @@
 import aboutCourses from '@/assets/about-courses.jpg'
 import Image from 'next/image'
+import { Button } from './ui/button'
 
 export function AboutCourses() {
   return (
@@ -24,9 +25,7 @@ export function AboutCourses() {
           profissionalizantes.
         </span>
 
-        <button className="text-sm lg:text-base tracking-tighter lg:tracking-normal leading-[22px] text-center h-[48px] max-w-[450px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] w-full py-3 px-3 lg:px-10 ">
-          Confira a agenda para próximos cursos
-        </button>
+        <Button>Confira a agenda para próximos cursos</Button>
       </div>
     </div>
   )

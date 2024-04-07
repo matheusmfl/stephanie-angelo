@@ -9,6 +9,7 @@ import depoimento05 from '@/assets/depoimento05.jpeg'
 import depoimento06 from '@/assets/depoimento06.jpeg'
 import depoimento07 from '@/assets/depoimento07.jpeg'
 import depoimento08 from '@/assets/depoimento08.jpeg'
+import { Button } from './ui/button'
 
 export function Depoiments() {
   return (
@@ -83,9 +84,7 @@ export function Depoiments() {
         </div>
       </div>
       <div className="px-6 pb-8 flex items-center">
-        <button className="text-base leading-[24px] max-w-[356px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] h-full w-full py-3 px-12 ">
-          Agende seu horário
-        </button>
+        <Button className="w-full">Agende seu horário</Button>
       </div>
     </div>
   )

@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 
 export interface ServicesProps {
@@ -17,7 +18,7 @@ export function ServicesSection({
 
   return (
     <section
-      className={`flex ${isIndexOdd ? '' : 'flex-row-reverse'} h-[600px] bg-[#F7F1E7]`}
+      className={`flex ${isIndexOdd ? '' : 'flex-row-reverse'} overflow-x-hidden h-[600px] bg-[#F7F1E7]`}
     >
       <div className="relative w-full h-full">
         <Image src={imageUrl} fill alt="Clinic Img" className="object-cover" />
@@ -32,9 +33,7 @@ export function ServicesSection({
             {description}
           </span>
 
-          <button className="text-base leading-[24px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] h-full w-full py-3 px-12 ">
-            Agende seu horário
-          </button>
+          <Button>Agende seu horário</Button>
         </div>
       </div>
     </section>

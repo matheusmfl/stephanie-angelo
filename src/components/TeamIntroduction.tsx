@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import teamMembers from '@/assets/team-introduction.jpeg'
+import { Button } from './ui/button'
 
 export function TeamIntroduction() {
   return (
@@ -15,7 +16,7 @@ export function TeamIntroduction() {
       </div>
       <div className="lg:px-20 px-6 py-12 lg:py-0 h-full flex flex-col justify-center gap-6">
         <h2 className="text-[32px] lg:text-[48px] font-normal leading-[58px] text-[#8F7D5E]">
-          Prontos Para te Receber
+          Prontos para te receber
         </h2>
 
         <span className="text-[18px] font-normal leading-[27px] text-[#4D4D4D]">
@@ -23,9 +24,9 @@ export function TeamIntroduction() {
           para oferecer as melhores experiências de beleza e autocuidado.
         </span>
 
-        <button className="text-base leading-[22px] text-center h-[48px] max-w-[355px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] w-full py-3 px-10 ">
+        <Button className="lg:max-w-[240px]">
           Conheça nossos profissionais
-        </button>
+        </Button>
       </div>
     </div>
   )

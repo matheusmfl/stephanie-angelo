@@ -4,6 +4,7 @@ import image2 from '@/assets/hero-02.jpg'
 import image3 from '@/assets/hero-03.jpg'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import { Button } from './ui/button'
 
 export function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -42,9 +43,7 @@ export function Hero() {
             personalizados para promover sua melhor versão
           </p>
 
-          <button className="text-base leading-[24px] h-[48px] max-w-[280px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] w-full py-3 px-12 ">
-            Agende seu horário
-          </button>
+          <Button>Agende seu horário</Button>
         </div>
       </main>
       {/* Responsive */}
@@ -59,9 +58,7 @@ export function Hero() {
           personalizados para promover sua melhor versão
         </p>
 
-        <button className="text-base leading-[24px] h-[48px] font-medium border border-[#BAB09B] rounded-sm text-[#F7F1E7] bg-[#4D4D4D] w-full py-3 px-12 ">
-          Agende seu horário
-        </button>
+        <Button>Agende seu horário</Button>
       </div>
     </>
   )

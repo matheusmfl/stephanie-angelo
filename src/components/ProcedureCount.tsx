@@ -2,6 +2,7 @@
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import CountUp from 'react-countup'
+import { Button } from './ui/button'
 
 export function ProcedureCount() {
   const ref = useRef(null)
@@ -31,9 +32,9 @@ export function ProcedureCount() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center">
-        <button className="text-base leading-[24px] h-[48px] max-w-[280px] font-medium border border-[#BAB09B] rounded-sm text-[#4D4D4D] bg-[#F7F1E7] w-full py-3 px-12 ">
+        <Button className="max-w-[280px] text-[#4D4D4D] bg-[#F7F1E7] hover:bg-[#F7F1E7]/90">
           Agende seu horário
-        </button>
+        </Button>
       </div>
     </div>
   )
