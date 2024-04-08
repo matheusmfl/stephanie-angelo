@@ -20,6 +20,7 @@ import {
 import { cn } from '@/lib/utils'
 import React from 'react'
 import Link from 'next/link'
+import { Button } from './ui/button'
 
 const aboutComponents: {
   title: string
@@ -28,7 +29,7 @@ const aboutComponents: {
 }[] = [
   {
     title: 'A Clínica',
-    href: '/docs/primitives/alert-dialog',
+    href: '/#about-stephanie',
     description:
       'Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão',
   },
@@ -84,9 +85,9 @@ export function Header() {
         <NavigationMenuHeader />
 
         <div className="flex items-center justify-center">
-          <button className="text-base leading-[24px] font-medium border border-[#BAB09B] rounded-sm max-w-[165px] text-[#F4F1F0] bg-[#8F7D5E] h-full w-full py-3 px-12 ">
+          <Button className="bg-[#8F7D5E] hover:bg-[#8F7D5E]/90">
             Contato
-          </button>
+          </Button>
         </div>
       </header>
 
@@ -108,9 +109,9 @@ export function Header() {
                 <Image src={logo} alt="Logotipo" />
               </SheetTitle>
               <SheetDescription>
-                <button className="bg-[#4D4D4D] flex items-center justify-center w-full h-12 text-[#F4F1F0] rounded-sm shadow-sm">
+                <Button className="bg-[#4D4D4D] hover:bg-[#4D4D4D]/90">
                   Agende seu horário
-                </button>
+                </Button>
               </SheetDescription>
             </SheetHeader>
 

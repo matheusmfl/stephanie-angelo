@@ -23,13 +23,13 @@ export const components: {
 }[] = [
   {
     title: 'Harmonização Facial',
-    href: '/docs/primitives/alert-dialog',
+    href: '/services/harmonizacao-facial#teste',
     description:
       'Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão',
   },
   {
     title: 'Harmonização Corporal',
-    href: '/docs/primitives/hover-card',
+    href: '/services/harmonizacao-corporal',
     description:
       'Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes',
   },
@@ -84,7 +84,7 @@ export function NavigationMenuHeader() {
                   Re-usable components built using Radix UI and Tailwind CSS.
                 </ListItem>
                 <ListItem
-                  href="/docs/installation"
+                  href="/#about-stephanie"
                   title="Dra. Stéphanie Angelo"
                 >
                   How to install dependencies and structure your app.

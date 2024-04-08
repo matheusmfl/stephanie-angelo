@@ -84,7 +84,7 @@ export function Depoiments() {
         </div>
       </div>
       <div className="px-6 pb-8 flex items-center">
-        <Button className="w-full">Agende seu horário</Button>
+        <Button className="w-full lg:max-w-[240px]">Agende seu horário</Button>
       </div>
     </div>
   )

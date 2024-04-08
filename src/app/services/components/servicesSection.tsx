@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+
 import Image from 'next/image'
 
 export interface ServicesProps {
@@ -18,14 +19,21 @@ export function ServicesSection({
 
   return (
     <section
-      className={`flex ${isIndexOdd ? '' : 'flex-row-reverse'} overflow-x-hidden h-[600px] bg-[#F7F1E7]`}
+      className={`flex ${isIndexOdd ? '' : 'lg:flex-row-reverse'} flex-col lg:flex-row overflow-x-hidden lg:h-[600px] h-full bg-[#F7F1E7]`}
     >
-      <div className="relative w-full h-full">
-        <Image src={imageUrl} fill alt="Clinic Img" className="object-cover" />
+      <div className="relative w-full h-full min-h-[400px]">
+        <Image
+          src={imageUrl}
+          loading={index !== 1 ? 'lazy' : 'eager'}
+          fill
+          alt="Clinic Img"
+          className="object-cover"
+          priority={index === 1}
+        />
       </div>
       <div className="flex h-full w-full items-center justify-center">
-        <div className="px-20 flex flex-col gap-6">
-          <h2 className="text-[#8F7D5E] text-[48px] leading-[58px] ">
+        <div className="lg:px-20 w-full h-full px-6 py-11 lg:py-0 flex flex-col gap-6 lg:justify-center">
+          <h2 className="text-[#8F7D5E] text-[32px] lg:text-[48px] leading-[58px] ">
             {title}
           </h2>
 

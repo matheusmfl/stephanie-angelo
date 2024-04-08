@@ -5,7 +5,10 @@ import { Button } from './ui/button'
 
 export function AboutStephanie() {
   return (
-    <div className="flex flex-col xl:grid xl:grid-cols-2  lg:h-[816px] overflow-hidden">
+    <div
+      id="about-stephanie"
+      className="flex flex-col xl:grid xl:grid-cols-2  lg:h-[816px] overflow-hidden"
+    >
       <div className="w-full h-full max-h-[800px]">
         <Image
           src={stephanie}
