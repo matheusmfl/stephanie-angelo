@@ -2,6 +2,7 @@ import { AboutCourses } from '@/components/AboutCourses'
 import { AboutStephanie } from '@/components/AboutStephanie'
 import { ClinicLocation } from '@/components/ClinicLocation'
 import { ClinicSpecializations } from '@/components/ClinicSpecializations'
+import { CoursesTimeline } from '@/components/CoursesTimeline'
 import { Depositions } from '@/components/Depositions'
 
 import { Hero } from '@/components/Hero'
@@ -20,6 +21,7 @@ export default function Home() {
       <TeamIntroduction />
       <AboutCourses />
       <Depositions />
+      <CoursesTimeline />
     </div>
   )
 }

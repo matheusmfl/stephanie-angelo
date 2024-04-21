@@ -30,57 +30,6 @@ export function Depositions() {
           />
         </div>
 
-        {/* <div className="flex flex-col gap-5 pb-5 lg:grid lg:grid-cols-3 lg:space-x-5 lg:space-y-5">
-        <div className="flex flex-col gap-5">
-          <CardFeedback
-            starsNumber={5}
-            message="Sempre tive medo de fazer procedimento estético no rosto...mas depois que conheci a Clínica e o trabalho da Dra Stéphanie, minha visão sobre procedimentos mudou completamente. Você já se sente especial na recepção. Ela tem um carinho,  respeito e o profissionalismo incrível com suas clientes. Sempre tive medo de fazer procedimento estético no rosto...mas depois que conheci a Clínica e o trabalho da Dra Stéphanie, minha visão sobre procedimentos mudou completamente. Você já se sente especial na recepção. Ela tem um carinho,  respeito e o profissionalismo incrível com suas clientes."
-            name="Eleonor"
-          />
-          <Image
-            src={depoimento04}
-            className="rounded-md shadow-md"
-            alt="Depoimento"
-          />
-        </div>
-        <div className="flex flex-col gap-5">
-          <Image
-            src={depoimento02}
-            className="rounded-md shadow-md"
-            alt="Depoimento"
-          />
-          <Image
-            src={depoimento05}
-            className="rounded-md shadow-md"
-            alt="Depoimento"
-          />
-        </div>
-
-        <div className="flex flex-col gap-5">
-          <Image
-            src={depoimento03}
-            className="rounded-md shadow-md"
-            alt="Depoimento"
-          />
-          <div className="flex flex-col gap-5">
-            <Image
-              src={depoimento06}
-              className="rounded-md shadow-md"
-              alt="Depoimento"
-            />
-            <Image
-              src={depoimento07}
-              className="rounded-md shadow-md"
-              alt="Depoimento"
-            />
-            <Image
-              src={depoimento08}
-              className="rounded-md shadow-md"
-              alt="Depoimento"
-            />
-          </div>
-        </div>
-      </div> */}
         <div className="px-6">
           <CarouselBase />
         </div>
