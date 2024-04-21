@@ -2,10 +2,11 @@ import { AboutCourses } from '@/components/AboutCourses'
 import { AboutStephanie } from '@/components/AboutStephanie'
 import { ClinicLocation } from '@/components/ClinicLocation'
 import { ClinicSpecializations } from '@/components/ClinicSpecializations'
-import { Depoiments } from '@/components/Depoiments'
+import { Depositions } from '@/components/Depositions'
 
 import { Hero } from '@/components/Hero'
 import { ProcedureCount } from '@/components/ProcedureCount'
+
 import { TeamIntroduction } from '@/components/TeamIntroduction'
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
       <ProcedureCount />
       <TeamIntroduction />
       <AboutCourses />
-      <Depoiments />
+      <Depositions />
     </div>
   )
 }

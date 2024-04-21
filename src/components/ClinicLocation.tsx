@@ -16,7 +16,7 @@ export function ClinicLocation() {
             botão abaixo e descubra a melhor trajeto para nossa clínica.
           </span>
 
-          <Button>Agende seu horário</Button>
+          <Button className="w-fit px-12">Veja como chegar</Button>
         </div>
       </div>
 

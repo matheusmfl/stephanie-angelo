@@ -20,8 +20,9 @@ export function TeamIntroduction() {
         </h2>
 
         <span className="text-[18px] font-normal leading-[27px] text-[#4D4D4D]">
-          Somos apaixonados por cuidar da saúde e o bem-estar estamos prontos
-          para oferecer as melhores experiências de beleza e autocuidado.
+          Somos apaixonados por cuidar da saúde e bem-estar dos nossos
+          pacientes. Estamos prontos para oferecer as melhores experiências de
+          beleza e autocuidado.
         </span>
 
         <Button className="lg:max-w-[240px]">
