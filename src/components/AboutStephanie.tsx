@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import textLogo from '@/assets/aboutStephanieTxt.svg'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 export function AboutStephanie() {
   return (
@@ -27,7 +28,9 @@ export function AboutStephanie() {
             Dra. Stéphanie Angelo.
           </span>
 
-          <Button>Leia mais sobre a Dra. Stéfanie Angelo</Button>
+          <Link href={'/stephanie-angelo'}>
+            <Button>Leia mais sobre a Dra. Stéfanie Angelo</Button>
+          </Link>
         </div>
       </div>
     </div>
