@@ -15,8 +15,8 @@ export function AboutCourses() {
           nossas técnicas exclusivas!
         </span>
 
-        <Button className="w-fit px-12">
-          Saiba mais sobre o cronograma e ementas
+        <Button className="md:w-fit px-12">
+          Saiba mais sobre <br className="md:hidden" /> o cronograma e ementas
         </Button>
       </div>
       <div className="relative h-[450px] lg:h-[720px]">
