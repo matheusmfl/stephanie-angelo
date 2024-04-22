@@ -80,17 +80,17 @@ export function NavigationMenuHeader() {
                     </a>
                   </NavigationMenuLink>
                 </li>
-                <ListItem href="/docs" title="A Clínica">
-                  Re-usable components built using Radix UI and Tailwind CSS.
+                <ListItem href="/clinica" title="A Clínica">
+                  Confira nosso espaço
                 </ListItem>
                 <ListItem
-                  href="/#about-stephanie"
+                  href="/stephanie-angelo"
                   title="Dra. Stéphanie Angelo"
                 >
-                  How to install dependencies and structure your app.
+                  Conheça a Dra.Stephanie
                 </ListItem>
-                <ListItem href="/docs/primitives/typography" title="Equipe">
-                  Styles for headings, paragraphs, lists...etc
+                <ListItem href="/profissionais" title="Equipe">
+                  Confira nossa lista de especialistas
                 </ListItem>
               </ul>
             </NavigationMenuContent>

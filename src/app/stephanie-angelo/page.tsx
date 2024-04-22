@@ -92,7 +92,7 @@ export default async function Page() {
         </section>
       </section>
 
-      <SectionSeeOtherProfessionals />
+      <SectionSeeOtherProfessionals hasPadding={true} />
     </main>
   )
 }

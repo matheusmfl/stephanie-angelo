@@ -3,11 +3,18 @@ import { listProfessional } from '../../../sanity/querys/professional/list'
 import { ProfessionalCard } from './ProfessionalCard'
 import { urlForImage } from '../../../sanity/lib/image'
 
-export default async function SectionSeeOtherProfessionals() {
+export const revalidate = 60
+export default async function SectionSeeOtherProfessionals({
+  hasPadding,
+}: {
+  hasPadding?: boolean
+}) {
   const profissionais = await listProfessional()
-  console.log(profissionais)
+
   return (
-    <section className="flex flex-col w-full px-6 py-10 lg:py-20 gap-10 lg:px-10 ">
+    <section
+      className={`flex flex-col w-full ${hasPadding && 'px-6'} py-10 lg:py-20 gap-10 lg:px-10 `}
+    >
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
         <h2 className="text-[24px] lg:text-[32px] text-[#4D4D4D] font-semibold">
           Conheça também a história da nossa equipe
@@ -18,7 +25,7 @@ export default async function SectionSeeOtherProfessionals() {
           </span>
         </Link>
       </div>
-      <div className="flex flex-col md:grid md:grid-cols-2">
+      <div className="flex flex-col gap-5 md:grid md:grid-cols-2">
         {profissionais &&
           profissionais.map((profissional, index) => {
             if (index >= 2) {

@@ -29,19 +29,19 @@ const aboutComponents: {
 }[] = [
   {
     title: 'A Clínica',
-    href: '/#about-stephanie',
+    href: '/clinica',
     description:
       'Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão',
   },
   {
     title: 'Dra. Stéphanie Angelo',
-    href: '/docs/primitives/hover-card',
+    href: '/stephanie-angelo',
     description:
       'Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes',
   },
   {
     title: 'Equipe',
-    href: '/docs/primitives/progress',
+    href: '/profissionais',
     description:
       'Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e terapêuticas',
   },
