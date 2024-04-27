@@ -114,7 +114,7 @@ export function NavigationMenuHeader() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem className="bg-[#F4F1F0]">
-            <Link href="/docs" legacyBehavior passHref>
+            <Link href="/cursos" legacyBehavior passHref>
               <NavigationMenuLink className="bg-[#F4F1F0]">
                 Cursos
               </NavigationMenuLink>
@@ -130,7 +130,7 @@ export function NavigationMenuHeader() {
           </NavigationMenuItem>
 
           <NavigationMenuItem className="bg-[#F4F1F0]">
-            <Link href="/docs" legacyBehavior passHref>
+            <Link href="/blog" legacyBehavior passHref>
               <NavigationMenuLink className="bg-[#F4F1F0]">
                 Blog
               </NavigationMenuLink>

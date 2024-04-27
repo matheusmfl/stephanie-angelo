@@ -57,7 +57,7 @@ export function FormContact() {
             WhatsApp
           </span>
         </div>
-        <div className="bg-[#BAB09B] flex flex-col gap-5 py-8 px-4 lg:py-10 lg:px-20 lg:gap-8">
+        <div className="bg-[#F4F1F0] flex flex-col gap-5 py-8 px-4 lg:py-10 lg:px-20 lg:gap-8">
           <span className="text-2xl text-[#4D4D4D] font-medium">Dados</span>
           <div className="flex flex-col gap-2">
             <FormProvider {...userForm}>

@@ -36,8 +36,7 @@ const aboutComponents: {
   {
     title: 'Dra. Stéphanie Angelo',
     href: '/stephanie-angelo',
-    description:
-      'Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes',
+    description: 'Conheça sobre a Dra. Stephanie, nossa especialista.',
   },
   {
     title: 'Equipe',
@@ -54,21 +53,19 @@ const othersComponents: {
 }[] = [
   {
     title: 'Cursos',
-    href: '/docs/primitives/alert-dialog',
+    href: '/cursos',
     description:
       'Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão',
   },
   {
     title: 'Endereço',
-    href: '/docs/primitives/hover-card',
-    description:
-      'Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes',
+    href: '#endereço',
+    description: 'Saiba como chegar na nossa clínica',
   },
   {
     title: 'Blog',
-    href: '/docs/primitives/progress',
-    description:
-      'Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e terapêuticas',
+    href: '/blog',
+    description: 'Confira as últimas do nosso blog',
   },
 ]
 

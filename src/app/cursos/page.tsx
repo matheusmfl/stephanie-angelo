@@ -100,7 +100,7 @@ export default function Page() {
           ))}
         </article>
         <div className="py-10 px-6 relative overflow-hidden  lg:py-20 lg:px-20 flex flex-col bg-[#1A1A1A] gap-5 lg:gap-10">
-          <h2 className="text-center text-xl lg:text-[48px] font-medium text-[#F7F1E7]">
+          <h2 className="text-center text-xl leading-10 lg:text-[48px] font-medium text-[#F7F1E7]">
             Profissionais transformados <br /> através dos nossos cursos
           </h2>
           <Image src={separator} alt="separator" />
