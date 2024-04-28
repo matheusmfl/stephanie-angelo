@@ -6,6 +6,11 @@ import separatorMobile from '@/assets/mobileSeparator.svg'
 import { Button } from './ui/button'
 import { CarouselBase } from './CarouselBase'
 import { CardFeedbackProps } from './CardFeedback'
+import Link from 'next/link'
+import {
+  WhatsappNumbersEnum,
+  createWhatsAppLink,
+} from '@/utils/whatsappLinkGenerator'
 
 const depoiments: CardFeedbackProps[] = [
   {
@@ -62,9 +67,17 @@ export function Depositions() {
           <CarouselBase depoimentos={depoiments} />
         </div>
         <div className="px-6 pb-8 flex items-center">
-          <Button className="w-full lg:max-w-[240px]">
-            Agende seu horário
-          </Button>
+          <Link
+            href={createWhatsAppLink({
+              message:
+                ' Olá, vim pelo site! Gostaria de agendar um horário para atendimento.',
+              phoneNumber: WhatsappNumbersEnum.CLINICA,
+            })}
+          >
+            <Button className="w-full lg:max-w-[240px]">
+              Agende seu horário
+            </Button>
+          </Link>
         </div>
       </div>
     </>

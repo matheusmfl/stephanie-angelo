@@ -8,7 +8,7 @@ export function ClinicLocation() {
     <div className="xl:grid xl:grid-cols-2 flex flex-col-reverse h-full overflow-hidden">
       <div className="bg-slate-100 flex items-center  w-full h-full py-12 lg:py-0 px-6 lg:px-0 ">
         <div className="flex flex-col gap-6 lg:px-20">
-          <h2 className="text-[48px] font-normal leading-[58px] text-[#8F7D5E]">
+          <h2 className="text-[48px] font-medium leading-[58px] text-[#8F7D5E]">
             Localização privilegiada
           </h2>
           <span className="text-[18px] font-normal leading-[27px] text-[#4D4D4D]">
@@ -16,7 +16,13 @@ export function ClinicLocation() {
             botão abaixo e descubra a melhor trajeto para nossa clínica.
           </span>
 
-          <Button className="w-fit px-12">Veja como chegar</Button>
+          <a
+            href="https://maps.app.goo.gl/BbBjpPYRjRtULx978"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="w-fit px-12">Veja como chegar</Button>
+          </a>
         </div>
       </div>
 

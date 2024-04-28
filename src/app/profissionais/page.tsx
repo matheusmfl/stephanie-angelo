@@ -20,14 +20,15 @@ export default async function Page() {
           className="absolute right-0 -top-4 w-full "
           alt="Marca dágua"
         />
-        <h1 className="text-[#F4F1F0] text-2xl font-semibold text-center">
-          Conheça a história de vida de nossos excelentes profissionais
+        <h1 className="text-[#F4F1F0] text-2xl lg:text-[48px] font-medium text-center">
+          Conheça a história de vida de <br className="hidden lg:block" />{' '}
+          nossos excelentes profissionais
         </h1>
       </div>
 
-      <div className="px-6 py-10 flex flex-col gap-5 lg:py-20 lg:px-20 lg:grid lg:grid-cols-2">
+      <div className="px-6 py-10 flex flex-col gap-5 lg:py-20 2xl:px-[10%] lg:px-20 lg:grid lg:grid-cols-2">
         <Link href={`/stephanie-angelo`}>
-          <div className="flex flex-col w-full max-w-[540px] border rounded-sm border-[#D2CBBE]">
+          <div className="flex flex-col w-full  border rounded-sm border-[#D2CBBE]">
             <div className="py-6 px-3 flex flex-col gap-[10px]">
               <h3 className="text-2xl text-[#4D4D4D] font-semibold">
                 Dra. Stéphanie Angelo

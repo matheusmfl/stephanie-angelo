@@ -23,31 +23,31 @@ export const components: {
 }[] = [
   {
     title: 'Harmonização Facial',
-    href: '/services/harmonizacao-facial#teste',
+    href: `/services/harmonizacao-facial#${'Harmonização Facial'.replace(/\s/g, '-')}`,
     description:
       'Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão',
   },
   {
     title: 'Harmonização Corporal',
-    href: '/services/harmonizacao-corporal',
+    href: `/services/harmonizacao-corporal#${'Harmonização Corporal'.replace(/\s/g, '-')}`,
     description:
       'Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes',
   },
   {
     title: 'Massoterapia',
-    href: '/docs/primitives/progress',
+    href: `/services/outros#${'Massoterapia'.replace(/\s/g, '-')}`,
     description:
       'Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e terapêuticas',
   },
   {
     title: 'Jetbronze',
-    href: '/docs/primitives/scroll-area',
+    href: `/services/outros#${'Jetbronze'.replace(/\s/g, '-')}`,
     description:
       'O Jetbronze é um método seguro e eficaz de bronzeamento artificial que não causa danos à pele',
   },
   {
     title: 'Limpeza de Pele',
-    href: '/docs/primitives/tabs',
+    href: `/services/outros#${'Limpeza de Pele'.replace(/\s/g, '-')}`,
     description:
       'Elimine impurezas, renove a sua pele e desfrute da maciez e saúde que ela merece',
   },

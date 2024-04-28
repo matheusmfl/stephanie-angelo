@@ -1,5 +1,21 @@
 import { Button } from '@/components/ui/button'
+import {
+  WhatsappNumbersEnum,
+  createWhatsAppLink,
+} from '@/utils/whatsappLinkGenerator'
 import Image from 'next/image'
+import Link from 'next/link'
+
+const values = [
+  'Encantamento: Encantar você em cada etapa da sua jornada é a nossa prioridade.',
+  'Amor: Acreditamos no poder transformador do amor próprio e da autoaceitação.',
+  'Cuidado: Cuidamos de você com carinho, ética e profissionalismo, desde a primeira consulta até o acompanhamento pós-procedimento.',
+  'Elegância: A elegância permeia tudo o que fazemos, desde a estética da nossa clínica até a forma como tratamos cada paciente.',
+  'Entusiasmo: Somos apaixonados por estética e pela transformação positiva que podemos proporcionar na vida das pessoas.',
+  'Ética: A ética é a base de tudo o que fazemos, garantindo a segurança e a qualidade dos nossos procedimentos.',
+  'Qualidade: Buscamos a excelência em tudo o que fazemos, desde os produtos utilizados até a tecnologia empregada nos nossos procedimentos.',
+  'Confiança: Acreditamos que a confiança é fundamental para uma relação médico-paciente sólida e duradoura.',
+]
 
 export default function Page() {
   return (
@@ -17,19 +33,14 @@ export default function Page() {
         <div className="flex flex-col gap-5">
           <div className="lg:px-10">
             <h1 className="text-[32px] lg:text-[48px] text-[#8F7D5E] font-semibold ">
-              Clínica Dra. Stéphanie Angelo
+              Descubra a beleza que te transborda
             </h1>
             <span className="md:text-justify text-[#4D4D4D] font-normal ">
-              Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-              feugiat lectus. Class aptent taciti sociosqu ad litora torquent
-              per conubia nostra, per inceptos himenaeos. Praesent auctor purus
-              luctus enim egestas, ac scelerisque ante pulvinar. Donec ut
-              rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-              vel bibendum lorem. Morbi convallis convallis diam sit amet
-              lacinia. Aliquam in elementum tellus.
+              Na Clínica Dra. Stéphanie Angelo, acreditamos que a beleza é uma
+              jornada única, um caminho de autodescoberta e transformação. Mais
+              do que apenas aparência, é a expressão da sua melhor versão, a
+              confiança que irradia de dentro para fora e a felicidade que
+              transborda em cada sorriso.
             </span>
           </div>
           <div className="h-[190px] lg:h-[640px] relative">
@@ -46,19 +57,14 @@ export default function Page() {
         <div className="flex flex-col gap-5">
           <div className="lg:px-10">
             <h1 className="text-[32px]  text-[#8F7D5E] font-semibold ">
-              Espaço acolhedor
+              Um refúgio acolhedor
             </h1>
             <span className="md:text-justify text-[#4D4D4D] font-normal ">
-              Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-              feugiat lectus. Class aptent taciti sociosqu ad litora torquent
-              per conubia nostra, per inceptos himenaeos. Praesent auctor purus
-              luctus enim egestas, ac scelerisque ante pulvinar. Donec ut
-              rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-              vel bibendum lorem. Morbi convallis convallis diam sit amet
-              lacinia. Aliquam in elementum tellus.
+              Imagine um lugar onde você se sente acolhida, onde cada detalhe
+              foi pensado para proporcionar uma experiência memorável. Um
+              ambiente elegante e sofisticado, onde a atenção aos detalhes e a
+              excelência em cada procedimento garantem resultados impecáveis e
+              experiências únicas.
             </span>
           </div>
           <div className="h-[190px] lg:h-[640px] relative">
@@ -75,19 +81,16 @@ export default function Page() {
         <div className="flex flex-col gap-5">
           <div className="lg:px-10">
             <h1 className="text-[32px]  text-[#8F7D5E] font-semibold ">
-              Sinta a experiência
+              Nossa missão: Encantar você
             </h1>
             <span className="md:text-justify text-[#4D4D4D] font-normal ">
-              Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-              feugiat lectus. Class aptent taciti sociosqu ad litora torquent
-              per conubia nostra, per inceptos himenaeos. Praesent auctor purus
-              luctus enim egestas, ac scelerisque ante pulvinar. Donec ut
-              rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-              vel bibendum lorem. Morbi convallis convallis diam sit amet
-              lacinia. Aliquam in elementum tellus.
+              Na Clínica Dra. Stéphanie Angelo, cada paciente é único.
+              Acreditamos que a estética deve ser personalizada, feita com amor
+              e carinho, para que você se sinta linda e confiante por dentro e
+              por fora. Nossa missão é elevar sua autoestima, proporcionando um
+              ambiente acolhedor e elegante, onde a atenção aos detalhes e a
+              excelência em cada procedimento garantem resultados impecáveis e
+              experiências memoráveis.
             </span>
           </div>
           <div className="h-[190px] lg:h-[640px] relative">
@@ -100,7 +103,43 @@ export default function Page() {
             />
           </div>
         </div>
-        <Button className="max-w-fit">Agende seu horário</Button>
+
+        <div className="lg:px-10 flex flex-col gap-5">
+          <h1 className="text-[32px]  text-[#8F7D5E] font-semibold ">
+            Nossos Valores: A base da nossa paixão
+          </h1>
+          <ul className="text-[#4D4D4D] text-justify text-lg font-normal">
+            {values.map((value, index) => {
+              const [key, ...rest] = value.split(': ')
+              const description = rest.join(': ')
+
+              return (
+                <li key={index}>
+                  <strong>{key}:</strong> {description}
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+
+        <div className="lg:px-10 flex flex-col gap-[30px]">
+          <h1 className="text-[32px]  text-[#8F7D5E] font-semibold ">
+            Sua jornada começa aqui
+          </h1>
+          <span className="md:text-justify text-[#4D4D4D] font-normal ">
+            Entre em contato conosco hoje mesmo e agende sua consulta. Dê o
+            primeiro passo em direção à sua melhor versão!
+          </span>
+        </div>
+        <Link
+          href={createWhatsAppLink({
+            message:
+              'Olá, me encantei com a clínica que vi no site, gostaria de conhecer!',
+            phoneNumber: WhatsappNumbersEnum.CLINICA,
+          })}
+        >
+          <Button className="max-w-fit lg:ml-10">Agende seu horário</Button>
+        </Link>
       </div>
     </main>
   )

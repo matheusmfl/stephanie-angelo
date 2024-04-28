@@ -13,9 +13,14 @@ const columns = [
   {
     title: 'Harmonização glútea',
     description:
-      'Protocolo desenvolvido para pessoas insatisfeitas com resultados de cirurgias como lipoescultura, LAD, HD, entre outras, oferecemos uma solução não cirúrgica! O protocolo consiste na mobilização de gordura que causa irregularidades na camada da pele, utilizando aplicação de ativos lipolíticos e bioestimuladores de colágeno. Espera-se uma melhoria nas fibroses e alinhamento das gorduras localizadas, resultando em uma aparência mais uniforme e firme.',
+      'Protocolo que visa restaurar a simetria e firmeza do glúteo agindo em 3 aspectos:',
     imageUrl:
       'https://s3-alpha-sig.figma.com/img/8807/24fd/1660e4c02124bdbe8b70d1261c71b123?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TeiMjh2woRaGwwXyBUhEEGpWApHc~EHuNRx7uGZYseEZSkWNEE1QVyMc3BEbtabA3zCFrkIdjHG0wO4t1SuywfKy1xSpjh1LmCo7FrOXyba-Zo2yG~Rxl3BH0R~BaEW1C7r0pedByEhhIDz8UuyIoZ5kqmUHFUUD7tO6TrFYDNeV7fBWn-NdaVXYG9Tg2nl8HfVOSQ4~KgQfkHqNsaUMup80zTkSdj8GLCuLVXXfaODMBkO~c1BafC5Wji1TYxGagQBepx-WvchUpPl99BJcxKj0ECzcT3q5t~3eFG3R8RgtAn-Q4agcAjRZmP-BaC0FwSzGHDaSotXItC2FTirZYw__',
+    listItems: [
+      'Melhora do aspecto geral, tratamento multicamadas',
+      'Melhora da flacidez e firmeza com aplicação dos bioestimuladores de colágeno',
+      'Correção e volumização de assimetrias com preenchimento a base de ácido hialurônico.',
+    ],
   },
 
   {
@@ -45,6 +50,7 @@ export default function Page() {
             index={index + 1}
             description={section.description}
             title={section.title}
+            listItems={section.listItems && section.listItems}
             imageUrl={section.imageUrl}
           />
         )

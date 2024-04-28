@@ -21,6 +21,10 @@ import { cn } from '@/lib/utils'
 import React from 'react'
 import Link from 'next/link'
 import { Button } from './ui/button'
+import {
+  WhatsappNumbersEnum,
+  createWhatsAppLink,
+} from '@/utils/whatsappLinkGenerator'
 
 const aboutComponents: {
   title: string
@@ -82,9 +86,16 @@ export function Header() {
         <NavigationMenuHeader />
 
         <div className="flex items-center justify-center">
-          <Button className="bg-[#8F7D5E] hover:bg-[#8F7D5E]/90">
-            Contato
-          </Button>
+          <Link
+            href={createWhatsAppLink({
+              message: ' Olá, vim pelo site! Gostaria de mais informações',
+              phoneNumber: WhatsappNumbersEnum.CLINICA,
+            })}
+          >
+            <Button className="bg-[#8F7D5E] hover:bg-[#8F7D5E]/90">
+              Contato
+            </Button>
+          </Link>
         </div>
       </header>
 
@@ -106,9 +117,17 @@ export function Header() {
                 <Image src={logo} alt="Logotipo" />
               </SheetTitle>
               <SheetDescription>
-                <Button className="bg-[#4D4D4D] hover:bg-[#4D4D4D]/90">
-                  Agende seu horário
-                </Button>
+                <Link
+                  href={createWhatsAppLink({
+                    message:
+                      ' Olá, vim pelo site! Gostaria de agendar um horário',
+                    phoneNumber: WhatsappNumbersEnum.CLINICA,
+                  })}
+                >
+                  <Button className="bg-[#4D4D4D] hover:bg-[#4D4D4D]/90">
+                    Agende seu horário
+                  </Button>
+                </Link>
               </SheetDescription>
             </SheetHeader>
 

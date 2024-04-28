@@ -2,6 +2,11 @@ import Image from 'next/image'
 import textLogo from '@/assets/aboutStephanieTxt.svg'
 import { Button } from '@/components/ui/button'
 import SectionSeeOtherProfessionals from '@/components/professional/SectionSeeOtherProfessionals'
+import Link from 'next/link'
+import {
+  WhatsappNumbersEnum,
+  createWhatsAppLink,
+} from '@/utils/whatsappLinkGenerator'
 
 export default async function Page() {
   return (
@@ -56,10 +61,14 @@ export default async function Page() {
               Leia mais sobre a história de sucesso da Dra. Stéphanie Angelo no
               seu perfil do Instagram clicando no botão abaixo.
             </span>
-
-            <Button className="w-fit bg-[#4D4D4D] hover:bg-[#4D4D4D]/90 text-[#F7F1E7]">
-              Veja no instagram
-            </Button>
+            <Link
+              href={'https://www.instagram.com/dra.stephanieangelo/'}
+              target="_blank"
+            >
+              <Button className="w-fit bg-[#4D4D4D] hover:bg-[#4D4D4D]/90 text-[#F7F1E7]">
+                Veja no instagram
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -86,9 +95,17 @@ export default async function Page() {
               alt="PodCast Photo"
             />
           </div>
-          <Button className="w-fit lg:ml-4 bg-[#4D4D4D] hover:bg-[#4D4D4D]/90 text-[#F7F1E7]">
-            Agende seu horário
-          </Button>
+          <Link
+            href={createWhatsAppLink({
+              message:
+                'Olá, vim pelo site! Gostaria de agendar um horário com a Dra. Stéphanie',
+              phoneNumber: WhatsappNumbersEnum.CLINICA,
+            })}
+          >
+            <Button className="w-fit lg:ml-4 bg-[#4D4D4D] hover:bg-[#4D4D4D]/90 text-[#F7F1E7]">
+              Agende seu horário
+            </Button>
+          </Link>
         </section>
       </section>
 

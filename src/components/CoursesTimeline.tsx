@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import marcaDagua from '@/assets/marcaDagua.svg'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 export function CoursesTimeline() {
   return (
@@ -14,10 +15,12 @@ export function CoursesTimeline() {
         <br className="hidden md:block" />
         data dos próximos cursos e mentorias.
       </span>
+      <Link href={'/cursos'}>
+        <Button className="bg-[#F4F1F0] z-20 md:w-fit hover:bg-[#F4F1F0]/90 text-[#4D4D4D]">
+          Conferir cronograma
+        </Button>
+      </Link>
 
-      <Button className="bg-[#F4F1F0] z-20 md:w-fit hover:bg-[#F4F1F0]/90 text-[#4D4D4D]">
-        Conferir cronograma
-      </Button>
       <Image
         src={marcaDagua}
         fill
