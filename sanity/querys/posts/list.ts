@@ -3,10 +3,21 @@ import { groq } from 'next-sanity'
 import { client } from '../../lib/client'
 import { PostResponse } from '../../@@types/post'
 
-export async function listPost(page: number): Promise<PostResponse[] | null> {
+interface paginationPost {
+  posts: PostResponse[] | null
+  total?: number
+}
+interface CountResult {
+  count: number
+}
+
+export async function listPost(page: number): Promise<paginationPost> {
   try {
+    const queryCount = groq`*[_type=='post'][0]{
+      "count": count(*[_type=='post' && highlight == false])
+    }`
     const query = groq`
-      *[_type == 'post' && highlight == false] | order(_createdAt) [($page - 1) * 4 ... $page * 4] {
+      *[_type == 'post' && highlight == false] | order(_createdAt) [($page - 1) * 2 ... $page * 2] {
         _id,
         _createdAt,
         mainImage,
@@ -14,14 +25,19 @@ export async function listPost(page: number): Promise<PostResponse[] | null> {
         description,
         body,
         title,
-        slug
+        slug,
       }
     `
+    const totalResult: CountResult = await client.fetch(queryCount)
+    const total = totalResult.count
     const posts: PostResponse[] = await client.fetch(query, { page })
+    console.log(total, 'TOTAL')
 
-    return posts
+    return { total, posts }
   } catch (error) {
     console.log(error, 'ERROR AO LISTAR POSTS')
-    return null
+    return {
+      posts: null,
+    }
   }
 }

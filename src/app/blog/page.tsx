@@ -2,11 +2,21 @@ import { getHighlightPost } from '../../../sanity/querys/posts/getHighlight'
 import { HighlightBlogComponent } from './components/highlightBlogComponent'
 import { urlForImage } from '../../../sanity/lib/image'
 import { listPost } from '../../../sanity/querys/posts/list'
-import { CardsBlog } from './components/cardsBlog'
 
-export default async function Page() {
+import { Pagination } from './components/pagination'
+import { RenderCards } from './components/renderCards'
+
+export default async function Page({
+  searchParams,
+}: {
+  searchParams?: {
+    page?: string
+  }
+}) {
+  const currentPage = Number(searchParams?.page) || 1
   const highlight = await getHighlightPost()
-  const posts = await listPost(1)
+  const { posts, total } = await listPost(currentPage)
+
   return (
     <main className="flex flex-col bg-[#F4F1F0]">
       <div className="px-6 lg:p-20 py-6 flex flex-col items-center gap-5">
@@ -37,19 +47,8 @@ export default async function Page() {
           Leia também
         </h4>
 
-        <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2">
-          {posts &&
-            posts.map((post, index) => (
-              <CardsBlog
-                createdAt={post?._createdAt}
-                slug={post?.slug.current}
-                title={post?.title}
-                description={post?.description}
-                imageUrl={urlForImage(post?.mainImage)}
-                key={index}
-              />
-            ))}
-        </div>
+        {posts && <RenderCards posts={posts} />}
+        <Pagination total={total ?? 0} />
       </div>
     </main>
   )
