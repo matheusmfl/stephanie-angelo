@@ -28,7 +28,6 @@ export default async function Page({
           que desejam se sentir lindas e <br className="hidden lg:block" />{' '}
           confiantes.
         </span>
-        <input type="text" />
       </div>
       <div className="lg:px-32">
         {highlight && (

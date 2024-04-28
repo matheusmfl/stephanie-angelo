@@ -16,7 +16,7 @@ export default async function Page({
   const data = post && new Date(post._createdAt)
   const dataFormatada =
     data && format(data, "dd 'de' MMMM yyyy", { locale: ptBR })
-  console.log(post)
+
   return post ? (
     <main className="flex bg-[#F4F1F0] flex-col">
       <div className="p-6 lg:py-20 lg:px-32 flex flex-col gap-6">
