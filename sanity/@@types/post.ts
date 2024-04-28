@@ -12,7 +12,8 @@ export type PostResponse = BaseSchema & {
   highlight: boolean
   slug: Slug
   keywords: string[]
-  author: Author
+  authorName: Author['name']
+  authorBio: Author['bio']
   mainImage: mainImage
   count?: number
 }
