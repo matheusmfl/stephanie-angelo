@@ -20,6 +20,8 @@
     "@sanity/vision": "^3.36.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "cmdk": "^1.0.0",
+    "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.0.2",
     "framer-motion": "^11.0.8",
     "lucide-react": "^0.344.0",

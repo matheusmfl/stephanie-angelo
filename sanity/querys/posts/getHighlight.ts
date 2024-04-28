@@ -3,16 +3,12 @@ import { groq } from 'next-sanity'
 import { client } from '../../lib/client'
 import { PostResponse } from '../../@@types/post'
 
-export async function getHighlightPost(
-  highlight: boolean,
-): Promise<PostResponse | null> {
+export async function getHighlightPost(): Promise<PostResponse | null> {
   try {
     const query = groq`
-      *[_type == 'post' && highlight == $slug]
+      *[_type == 'post' && highlight == true]
     `
-    const post: PostResponse[] = await client.fetch(query, {
-      highlight,
-    })
+    const post: PostResponse[] = await client.fetch(query)
 
     return post[0]
   } catch (error) {

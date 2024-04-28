@@ -36,8 +36,6 @@ export function FormContact() {
     formState: { errors },
   } = userForm
 
-  console.log(errors)
-
   const onSubmit: SubmitHandler<UserRequestForm> = async (data) => {
     console.log(data)
     toast.success('Sucesso! Em breve retornaremos o contato!')

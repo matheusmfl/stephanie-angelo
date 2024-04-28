@@ -3,9 +3,7 @@ import { groq } from 'next-sanity'
 import { client } from '../../lib/client'
 import { PostResponse } from '../../@@types/post'
 
-export async function listPost(
-  page: number,
-): Promise<Partial<PostResponse[]> | null> {
+export async function listPost(page: number): Promise<PostResponse[] | null> {
   try {
     const query = groq`
       *[_type == 'post' && highlight == false] | order(_createdAt) [($page - 1) * 4 ... $page * 4] {
@@ -19,7 +17,7 @@ export async function listPost(
         slug
       }
     `
-    const posts: Partial<PostResponse[]> = await client.fetch(query, { page })
+    const posts: PostResponse[] = await client.fetch(query, { page })
 
     return posts
   } catch (error) {

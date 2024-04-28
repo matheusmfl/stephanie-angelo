@@ -9,9 +9,11 @@ export type listMatchByKeywords = {
   slug: Slug
 }
 
-export async function listMatchByKeywords(): Promise<
-  listMatchByKeywords[] | null
-> {
+export async function listMatchByKeywords({
+  keyword,
+}: {
+  keyword: string
+}): Promise<listMatchByKeywords[] | null> {
   try {
     const query = groq`
       *[_type == 'post' && keywords match $keyword] {
@@ -19,7 +21,7 @@ export async function listMatchByKeywords(): Promise<
         slug
       }
     `
-    const links: listMatchByKeywords[] = await client.fetch(query)
+    const links: listMatchByKeywords[] = await client.fetch(query, { keyword })
 
     return links
   } catch (error) {
