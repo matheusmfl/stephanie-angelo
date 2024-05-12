@@ -43,7 +43,13 @@ export default function Page() {
             </span>
           </div>
           <div className="h-[190px] lg:h-[640px] relative">
-            <Image src={clinic1} fill alt="Ambiente acolhedor" />
+            <Image
+              src={clinic1}
+              placeholder="blur"
+              priority
+              fill
+              alt="Ambiente acolhedor"
+            />
           </div>
         </div>
 
