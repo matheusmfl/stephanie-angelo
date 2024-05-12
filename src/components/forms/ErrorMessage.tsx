@@ -8,7 +8,6 @@ export function ErrorMessage({ field }: ErrorMessageProps) {
   const {
     formState: { errors },
   } = useFormContext()
-  console.log(errors.name)
 
   const fieldError = errors[field]
 

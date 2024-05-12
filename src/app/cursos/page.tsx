@@ -6,26 +6,27 @@ import { CarouselBase } from '@/components/CarouselBase'
 import separator from '@/assets/separator.svg'
 import { FormContact } from '@/components/FormContact'
 
+import fullface from '../../../public/fullface.jpeg'
+import faceup from '../../../public/faceUp.jpeg'
+import perfectNose from '../../../public/perfectNose.jpeg'
+
 const CoursesArray: CardCursoProps[] = [
   {
-    imageUrl:
-      'https://s3-alpha-sig.figma.com/img/3834/0a21/97230ec35dedb507b75f8509ae68d39f?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lgI~OxH6Pm70i5X1Yx~CtJV-SYFRgh4I9SZri2gAys-RM1Me1T6fkRqCV4-ot-drvqh9fBXGEMURbqPjHLnUZsOz9TnBIc2TIvtaLcY1y68DbDFJ9DOlJ~UxgB~O7vsGRM8lYTc-6iIEr1F-vw7~hQCv99tmDDvpthH8X6acqAhYqtoK~mfcWtmoh93GNmzLhBk16H1zi4VH3cWByoJ5zpdsgN2twQCO6uNSm88KKVw7sdGIcDI54idOAyZ3KRtLc-8fobdoSzZtBleytmjJEz0YS7~U2xljQNciHrRd~YCRuJD7QgC8xWGcKzdeHDKoaAc8s95O8ouDF57WWiXVGQ__',
+    imageUrl: fullface,
     title: 'FULLFACE®',
     description:
       'Aprimore suas habilidades em um curso completo sobre preenchimentos faciais com ácido hialurônico, projetado para impulsionar sua carreira na área da harmonização facial! Desfrute de dois dias intensivos de aprendizado em nosso Curso VIP, onde teoria e prática se combinam perfeitamente. Com no máximo 3 alunos por turma, garantimos atenção personalizada e um ambiente propício para o seu desenvolvimento profissional!',
   },
 
   {
-    imageUrl:
-      'https://s3-alpha-sig.figma.com/img/4fca/bd8d/e152b5c25ad059f687802222acc9b103?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HRDEWiuOBUoK9jk6GJSEr8ahDJ0-y1Gwm6HVKhbGOc~OyW57~oAxdDeV1or6KywkLB94g-O5wSCIeyk5PTxnkMF8rd6Az~jFjaWQFqzAJ3-1JZRhRo4QBfC1iqB01ROXkXFV-X11tpZbusUGfVZ22rD58fNrRh7uClblRYwupdSvwOeqb1mufdIcXGNo6sGE89re-7Kev9XqYtUITrZPp9U2XLmFUpno037CYDV2u~XbNt~clG2Ag9njC2W5n1fFLcBsBkta8dVabnhJaomLYjf31Wnk-wUhtiPCrEnPVgxWC~AkgsoG6hIELnWaItYy2aWypeLLaJEFQP~EGvJXCQ__',
+    imageUrl: faceup,
     title: 'FACEUP',
     description:
       'Harmonizar a face apenas com toxina botulínica e preenchedores ainda não é o suficiente para alcançar resultados de excelência em rejuvenescimento facial. Neste intensivo, durante 12 horas, abordaremos os mais importantes tópicos para tornar você um profissional de sucesso na harmonização facial, agregando ainda mais resultados com o uso dos bioestimuladores de colágeno na sua rotina clínica.',
   },
 
   {
-    imageUrl:
-      'https://s3-alpha-sig.figma.com/img/c1be/d1e7/5350462f8ea84b44e51188512a219a19?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kZ6nzzWRQG4L1jquUXQskcUcGsp6p3a42Pf2plZ00UxKkbrdy796LxEvTwtBfVS2xZqC2N6-66lcmBoQ0ot1Hc714zVrwgEnzeWBMB2IvuPV9p7GZ2bnd-0jI2LA9YYgD49rQiMm2ksA87LErliIs-2ONRMF61fcJfDDU9I9EVPwiF93MIPKRd1ATZG9e9qydDEtyWWnajZPzp3Owc2ezCpVEJttMy1nzVY5KZDlPO9sDLkBZg-NfyZ1UVVUNtRUA8Wp3wSkHFgqO96vyhyNnk9r4nr11b1AGqtnWEDBIq~GohP3xUkqesQ1zUv9oQ0gc0G3a6Hg5GmO3~xFrrwvoQ__',
+    imageUrl: perfectNose,
     title: 'PERFECT NOSE',
     description:
       'Se você ainda tem medo e insegurança em realizar rinomodelação, este é o curso para você. Uma das maiores especialidades da Dra Stéphanie é rinomodelação e nós estamos aqui para virar essa chave na sua carreira. Neste intensivo, durante 12 horas, abordaremos os mais importantes tópicos para tornar você um profissional de sucesso, tendo resultados de excelência e principalmente, com segurança.',

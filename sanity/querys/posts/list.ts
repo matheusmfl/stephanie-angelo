@@ -31,7 +31,6 @@ export async function listPost(page: number): Promise<paginationPost> {
     const totalResult: CountResult = await client.fetch(queryCount)
     const total = totalResult.count
     const posts: PostResponse[] = await client.fetch(query, { page })
-    console.log(total, 'TOTAL')
 
     return { total, posts }
   } catch (error) {

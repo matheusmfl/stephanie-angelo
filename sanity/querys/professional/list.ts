@@ -18,7 +18,6 @@ export async function listProfessional(): Promise<
       }
     `
     const professionals: ProfessionalResponse[] = await client.fetch(query)
-    console.log(professionals)
 
     return professionals
   } catch (error) {

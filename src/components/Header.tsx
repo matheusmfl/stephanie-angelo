@@ -63,7 +63,7 @@ const othersComponents: {
   },
   {
     title: 'Endereço',
-    href: '#endereço',
+    href: 'https://www.google.com/maps/place/Av.+Jos%C3%A9+Loureiro+da+Silva,+2025+-+Sala+1201+-+Centro,+Gravata%C3%AD+-+RS,+94010-000/data=!4m2!3m1!1s0x95190b4121f00001:0x382d2aeed9f1db74?sa=X&ved=1t:242&ictx=111',
     description: 'Saiba como chegar na nossa clínica',
   },
   {
@@ -111,12 +111,12 @@ export function Header() {
             <MenuIcon size={'24'} color="#8F7D5E" />
           </SheetTrigger>
 
-          <SheetContent className="px-6 pt-20 flex flex-col gap-6 overflow-auto">
+          <SheetContent className="px-6 pt-20 flex flex-col gap-0 overflow-auto">
             <SheetHeader>
               <SheetTitle>
                 <Image src={logo} alt="Logotipo" />
               </SheetTitle>
-              <SheetDescription>
+              <SheetDescription className="pb-5">
                 <Link
                   href={createWhatsAppLink({
                     message:
@@ -177,6 +177,17 @@ export function Header() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <>
+              {othersComponents.map((component) => (
+                <Link
+                  key={component.title}
+                  className="px-6 font-medium border-b py-4"
+                  href={component.href}
+                >
+                  <span className="hover:underline">{component.title}</span>
+                </Link>
+              ))}
+            </>
           </SheetContent>
         </Sheet>
       </header>

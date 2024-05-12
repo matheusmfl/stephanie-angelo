@@ -5,6 +5,7 @@ import { ProfessionalCard } from '@/components/professional/ProfessionalCard'
 
 import { urlForImage } from '../../../sanity/lib/image'
 import Link from 'next/link'
+import aboutStephanie from '../../../public/aboutStephanie.webp'
 
 export const revalidate = 60
 
@@ -52,11 +53,10 @@ export default async function Page() {
             </div>
             <div className="h-[300px] w-full relative overflow-hidden border rounded-b-sm border-[#D2CBBE]">
               <Image
-                src={
-                  'https://s3-alpha-sig.figma.com/img/b3f3/9219/7e2731ba0a64f67b6e50843278464108?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GBCnmG6XrlazYaLoRrwMOfpxEkfMv1A1sHcTwfpSOiA96J~4ePtSpG2zoJ2uiFS6Z23rS5Oc6ZTrv80sSgDAFXq-QWx4E8NoVScxpllyxLyB-q~bHqSuyG6vcazhkgnse22juRS~c-sRa6UGQZtLauhw3p3Y79kbIBzG~RNsrVhssOXpsUSz5j9YuiWSKnoSp5kvtFqhuyJtFNb-xuYjM~~IlTwbIxNbIAk3kajzkalf2NkeAnThRd53wE9~Vh7Cf8wfHLFsAJI9QS0MhIBdTPQwdm-1Rshg3HKFdEt4P8uFey3a0p6G5tPTmEnJ-u-6Yr44W~90v99hgygwt0~qwQ__'
-                }
+                src={aboutStephanie}
                 alt={'Doutora Stephanie'}
                 fill
+                placeholder="blur"
                 className="object-cover"
               />
             </div>

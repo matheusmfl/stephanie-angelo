@@ -2,6 +2,10 @@ import Image from 'next/image'
 import logo from '@/assets/logo.svg'
 import { Instagram, Mail, MessageCircleMore } from 'lucide-react'
 import Link from 'next/link'
+import {
+  WhatsappNumbersEnum,
+  createWhatsAppLink,
+} from '@/utils/whatsappLinkGenerator'
 
 export function Footer() {
   return (
@@ -13,18 +17,33 @@ export function Footer() {
           </Link>
         </div>
 
-        <div className="flex gap-3 ">
+        <div className="flex flex-col gap-3 ">
           <span className="text-base text-[#4D4D4D] font-medium">Contato:</span>
-          <Link href={'/'}>
+          <Link
+            className="flex gap-3 text-center hover:underline"
+            href={createWhatsAppLink({
+              phoneNumber: WhatsappNumbersEnum.CLINICA,
+              message: 'Olá, vim pelo site! Gostaria de mais informações',
+            })}
+          >
             <MessageCircleMore className="text-[#4D4D4D] w-6 h-6" />
+            (51) - 99871-7896
           </Link>
 
-          <Link href={'/'}>
+          <Link
+            href={'https://www.instagram.com/dra.stephanieangelo/'}
+            className="flex gap-3  text-center hover:underline"
+          >
             <Instagram className="text-[#4D4D4D] w-6 h-6" />
+            @dra.stephanieangelo
           </Link>
 
-          <Link href={'/'}>
+          <Link
+            href={'mailto:contato@drastephanieangelo.com.br'}
+            className="flex gap-3  text-center hover:underline"
+          >
             <Mail className="text-[#4D4D4D] w-6 h-6" />
+            contato@drastephanieangelo.com.br
           </Link>
         </div>
       </div>

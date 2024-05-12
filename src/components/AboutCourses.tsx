@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Button } from './ui/button'
 import Link from 'next/link'
+import bgCourse from '../../public/aboutCourse.jpeg'
 
 export function AboutCourses() {
   return (
@@ -23,9 +24,8 @@ export function AboutCourses() {
       <div className="relative h-[450px] lg:h-[720px]">
         <Image
           fill={true}
-          src={
-            'https://s3-alpha-sig.figma.com/img/5b40/34d5/5d2ba2e36c49578466bb9e90c8ab4cc2?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jROi-oNowcup7pXiYYtQUPlxNbCY9PbWnEFoNlkMm8q0yVMNJMZyqnT5cpSetN0bp62sS--7yrNlt-lLMpsMwFplWDvgEyV2yHI5DbYeYQVFJjn5oQ8DNED-N~q9~TqX5tj3DKR2r1WYWyFETeS55T0f9unTnRZ1a9OgJePEx3nmnsaB6jZVhqmFWalirFfa5yVUqgB9UpagRpzqg1E2I6V2nSFMGE~siJ7tLXOxCiZvPEqvLDk0qCRc7oSra8YcXT9oz~OhXE8CDoQhVAawf5iE1rLQpY1t1ZwQpFOGoeHcvr~BYt-wbY04AGQry6Vs6UIRdsK2-5240q3VvKa-pg__'
-          }
+          src={bgCourse}
+          placeholder="blur"
           className="object-cover"
           alt="Sobre nossos cursos"
         />

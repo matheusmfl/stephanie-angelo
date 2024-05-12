@@ -3,10 +3,10 @@ import {
   WhatsappNumbersEnum,
   createWhatsAppLink,
 } from '@/utils/whatsappLinkGenerator'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 export type CardCursoProps = {
-  imageUrl: string
+  imageUrl: string | StaticImageData
   title: string
   description: string
 }

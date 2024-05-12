@@ -122,7 +122,11 @@ export function NavigationMenuHeader() {
           </NavigationMenuItem>
 
           <NavigationMenuItem className="bg-[#F4F1F0]">
-            <Link href="/docs" legacyBehavior passHref>
+            <Link
+              href="https://www.google.com/maps/place/Av.+Jos%C3%A9+Loureiro+da+Silva,+2025+-+Sala+1201+-+Centro,+Gravata%C3%AD+-+RS,+94010-000/data=!4m2!3m1!1s0x95190b4121f00001:0x382d2aeed9f1db74?sa=X&ved=1t:242&ictx=111"
+              legacyBehavior
+              passHref
+            >
               <NavigationMenuLink className="bg-[#F4F1F0]">
                 Endereço
               </NavigationMenuLink>

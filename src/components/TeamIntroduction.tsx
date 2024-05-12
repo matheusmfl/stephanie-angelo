@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { Button } from './ui/button'
+import image from '../../public/teamIntroduction.jpeg'
 import Link from 'next/link'
 
 export function TeamIntroduction() {
@@ -8,11 +9,10 @@ export function TeamIntroduction() {
     <div className="flex flex-col lg:grid lg:grid-cols-2 bg-red-50">
       <div className="relative h-[440px] lg:h-[560px]">
         <Image
-          src={
-            'https://s3-alpha-sig.figma.com/img/30e4/cd6d/fe04c0d87ef836961b56ee2193e6e0f4?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VsQBJi1UjXZRBUiimgptcWuMJHPblJvme1-ywvjPtPFcPnpLrBTdOphBOJRfwo9BXmrv-rl3VcVQqvPcT-YJc28s-VY2CcfpW35Ot69dWwNjPZPYhL2WYIZmfl5mBlmfzWnMNkChKRLOAf-RiFdkN0B9Ia9q3LvdbLnnt5MozqBWp~Lh3jcq51zVtwRmW1dZxic7qtXfZ~tUtA9bbNjeLJBPTop05vukNGeZPooKT1EOUtMI8rEY~cdEkVjyb-p6JUEPF3RAo4kQYHG2A54tp9AUWWPaOTKmVqNg4fz1Y8yi8GR7pmroaaXipAWt3dmhcfjaItJpXxMJ0CeKIrIzWw__'
-          }
+          src={image}
           fill
           loading="lazy"
+          placeholder="blur"
           alt="Membros do nosso time"
           className="object-cover object-center lg:object-bottom"
         />

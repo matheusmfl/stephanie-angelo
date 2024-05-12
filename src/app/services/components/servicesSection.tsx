@@ -4,12 +4,12 @@ import {
   createWhatsAppLink,
 } from '@/utils/whatsappLinkGenerator'
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 
 export interface ServicesProps {
   index: number
-  imageUrl: string
+  imageUrl: string | StaticImageData
   title: string
   description: string
   listItems?: string[]
@@ -23,7 +23,6 @@ export function ServicesSection({
   listItems,
 }: ServicesProps) {
   const isIndexOdd = index % 2 !== 0
-  console.log(listItems)
 
   return (
     <section
