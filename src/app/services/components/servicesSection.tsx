@@ -27,7 +27,7 @@ export function ServicesSection({
   return (
     <section
       id={title.replace(/\s/g, '-')}
-      className={`flex ${isIndexOdd ? '' : 'lg:flex-row-reverse '} flex-col lg:flex-row overflow-x-hidden lg:h-[600px] h-full bg-[#F7F1E7]`}
+      className={`flex ${isIndexOdd ? '' : 'lg:flex-row-reverse text-right '} flex-col lg:flex-row overflow-x-hidden lg:h-[600px] h-full bg-[#F7F1E7]`}
     >
       <div className="relative w-full h-full min-h-[400px]">
         <Image
