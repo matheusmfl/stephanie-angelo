@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import textLogo from '@/assets/aboutStephanieTxt.svg'
 import { Button } from '@/components/ui/button'
@@ -9,9 +10,58 @@ import {
 } from '@/utils/whatsappLinkGenerator'
 import heroStephanie from '../../../public/heroStephanie.jpeg'
 import printInsta from '../../../public/printInsta.png'
-import podCastPhoto from '../../../public/podCastphoto.jpeg'
 
-export default async function Page() {
+import { YoutubeCards } from '@/components/YoutubeCards'
+import '@/app/stephanie-angelo/teste.css'
+
+const videos = [
+  {
+    url: 'https://www.youtube.com/watch?v=cWGUqZOVJqg',
+    title: 'Depoimento 1 - Clínica Dra. Stéphanie Angelo',
+    time: '1:00',
+    thumb: 'https://img.youtube.com/vi/cWGUqZOVJqg/maxresdefault.jpg',
+  },
+  {
+    url: 'https://www.youtube.com/watch?v=W6Cj9Rz_F1U',
+    title: 'Depoimento 2 - Clínica Dra. Stéphanie Angelo',
+    time: '1:30',
+    thumb: 'https://img.youtube.com/vi/W6Cj9Rz_F1U/maxresdefault.jpg',
+  },
+  {
+    url: 'https://www.youtube.com/watch?v=Q3XnpoVHhbk',
+    title: 'Depoimento 3 - Clínica Dra. Stéphanie Angelo',
+    time: '1:41',
+    thumb: 'https://img.youtube.com/vi/Q3XnpoVHhbk/maxresdefault.jpg',
+  },
+  {
+    url: 'https://www.youtube.com/watch?v=4h3ZsSdnMU4',
+    title: 'Depoimento 4 - Clínica Dra. Stéphanie Angelo',
+    time: '1:50',
+    thumb: 'https://img.youtube.com/vi/4h3ZsSdnMU4/maxresdefault.jpg',
+  },
+  {
+    url: 'https://www.youtube.com/watch?v=6999TSnnxxc',
+    title: 'Depoimento 5 - Clínica Dra. Stéphanie Angelo',
+    time: '1:42',
+    thumb: 'https://img.youtube.com/vi/6999TSnnxxc/maxresdefault.jpg',
+  },
+]
+
+const VideoPlayer = ({ videoId }: { videoId: string }) => {
+  return (
+    <div className="relative pb-[56.25%] h-0 overflow-hidden">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src={`https://www.youtube.com/embed/${videoId}`}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        title="YouTube Video Player"
+      ></iframe>
+    </div>
+  )
+}
+
+export default function Page() {
   return (
     <main className="flex flex-col bg-[#F4F1F0]">
       <div className="relative w-full h-[240px] md:h-[640px]">
@@ -71,6 +121,30 @@ export default async function Page() {
           </div>
         </div>
 
+        {/* Section de videos */}
+
+        <section className="flex flex-col lg:px-6 gap-6 mt-4 ">
+          <h2 className="text-[#8F7D5E] text-2xl font-medium lg:text-[48px]  ">
+            Campanha Transformando Vidas
+          </h2>
+          <div>
+            <VideoPlayer videoId="GsEWjiF9Kws" />
+          </div>
+          <div className="flex gap-5 lg:gap-0 lg:justify-between overflow-x-scroll custom-scrollbar">
+            {videos.map((video, index) => {
+              return (
+                <YoutubeCards
+                  thumb={video.thumb}
+                  time={video.time}
+                  title={video.title}
+                  url={video.url}
+                  key={index}
+                />
+              )
+            })}
+          </div>
+        </section>
+
         {/* Segunda Sessão com foto no podcast */}
         <section className="flex flex-col gap-6 mt-10">
           <div className="lg:px-4 flex flex-col gap-6 ">
@@ -84,13 +158,8 @@ export default async function Page() {
             </span>
           </div>
 
-          <div className="relative h-[200px] lg:h-[675px]">
-            <Image
-              src={podCastPhoto}
-              fill
-              className="md:object-cover object-contain object-center"
-              alt="PodCast Photo"
-            />
+          <div>
+            <VideoPlayer videoId="pT44npteue8" />
           </div>
           <Link
             href={createWhatsAppLink({

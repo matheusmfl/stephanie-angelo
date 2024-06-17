@@ -1,3 +1,4 @@
+'use client'
 import { ServicesSection } from '../components/servicesSection'
 import React from 'react'
 
