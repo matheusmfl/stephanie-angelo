@@ -77,7 +77,6 @@ export function FormContact() {
                   <ReactInputMask
                     className="border border-borderDefaultInput w-full py-2 px-3 font-medium placeholder:items-center placeholder:text-[#BAB5B5] placeholder:text-xs rounded-[6px] h-[36px] text-xs text-[#393939]"
                     mask="(99) 99999-9999"
-                    maskPlaceholder="(99) 99999-9999"
                     {...register('cellphone')}
                   />
                   {errors.cellphone && (

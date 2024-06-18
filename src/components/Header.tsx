@@ -76,7 +76,7 @@ const othersComponents: {
 export function Header() {
   return (
     <>
-      <header className="hidden lg:flex gap-8 py-5 px-20 bg-[#F4F1F0] ">
+      <header className="hidden lg:flex gap-8 py-5 px-20 bg-[#F4F1F0]">
         <div>
           <Link href={'/'}>
             <Image src={logo} alt="Logotipo" />
