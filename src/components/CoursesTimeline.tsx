@@ -15,7 +15,7 @@ export function CoursesTimeline() {
         <br className="hidden md:block" />
         data dos próximos cursos e mentorias.
       </span>
-      <Link href={'/cursos'}>
+      <Link href={'/cursos'} className="z-20">
         <Button className="bg-[#F4F1F0] z-20 md:w-fit hover:bg-[#F4F1F0]/90 text-[#4D4D4D]">
           Conferir cronograma
         </Button>
@@ -24,13 +24,13 @@ export function CoursesTimeline() {
       <Image
         src={marcaDagua}
         fill
-        className="right-20 md:hidden"
+        className="right-20 z-0 md:hidden"
         alt="Marca Dagua"
       />
 
       <Image
         src={marcaDagua}
-        className="hidden md:absolute md:block md:h-[620px] md:w-[620px] md:-right-5 md:top-3"
+        className="hidden md:absolute z-0 md:block md:h-[620px] md:w-[620px] md:-right-5 md:top-3"
         alt="Marca Dagua"
       />
     </div>

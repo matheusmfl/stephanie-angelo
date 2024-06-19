@@ -3,6 +3,11 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import CountUp from 'react-countup'
 import { Button } from './ui/button'
+import Link from 'next/link'
+import {
+  WhatsappNumbersEnum,
+  createWhatsAppLink,
+} from '@/utils/whatsappLinkGenerator'
 
 export function ProcedureCount() {
   const ref = useRef(null)
@@ -32,9 +37,17 @@ export function ProcedureCount() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center">
-        <Button className="max-w-[280px] text-[#4D4D4D] bg-[#F7F1E7] hover:bg-[#F7F1E7]/90">
-          Agende seu horário
-        </Button>
+        <Link
+          href={createWhatsAppLink({
+            message:
+              'Olá, vim pelo site! Gostaria de agendar um horário para atendimento.',
+            phoneNumber: WhatsappNumbersEnum.CLINICA,
+          })}
+        >
+          <Button className="max-w-[280px] text-[#4D4D4D] bg-[#F7F1E7] hover:bg-[#F7F1E7]/90">
+            Agende seu horário
+          </Button>
+        </Link>
       </div>
     </div>
   )

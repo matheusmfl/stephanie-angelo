@@ -30,7 +30,7 @@ export default function Page() {
       </div>
       <div className="lg:py-20 lg:px-20 py-[56px] px-6 flex flex-col gap-8 lg:gap-20">
         <div className="flex flex-col gap-5">
-          <div className="lg:px-10">
+          <div className="lg:px-10 flex flex-col gap-5 lg:gap-0">
             <h1 className="text-[32px] lg:text-[48px] text-[#8F7D5E] font-semibold ">
               Descubra a beleza que te transborda
             </h1>
@@ -54,7 +54,7 @@ export default function Page() {
         </div>
 
         <div className="flex flex-col gap-5">
-          <div className="lg:px-10">
+          <div className="lg:px-10 flex flex-col gap-5 lg:gap-0">
             <h1 className="text-[32px]  text-[#8F7D5E] font-semibold ">
               Um refúgio acolhedor
             </h1>
@@ -72,7 +72,7 @@ export default function Page() {
         </div>
 
         <div className="flex flex-col gap-5">
-          <div className="lg:px-10">
+          <div className="lg:px-10 flex flex-col gap-5 lg:gap-0">
             <h1 className="text-[32px]  text-[#8F7D5E] font-semibold ">
               Nossa missão: Encantar você
             </h1>
@@ -93,7 +93,7 @@ export default function Page() {
 
         <div className="lg:px-10 flex flex-col gap-5">
           <h1 className="text-[32px]  text-[#8F7D5E] font-semibold ">
-            Nossos Valores: A base da nossa paixão
+            Nossos valores: A base da nossa paixão
           </h1>
           <ul className="text-[#4D4D4D] text-justify text-lg font-normal">
             {values.map((value, index) => {

@@ -34,8 +34,7 @@ const aboutComponents: {
   {
     title: 'A Clínica',
     href: '/clinica',
-    description:
-      'Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão',
+    description: 'Saiba mais sobre nossa clínica!',
   },
   {
     title: 'Dra. Stéphanie Angelo',
@@ -45,8 +44,7 @@ const aboutComponents: {
   {
     title: 'Equipe',
     href: '/profissionais',
-    description:
-      'Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e terapêuticas',
+    description: 'Conheça nosso time de profissionais',
   },
 ]
 
@@ -151,21 +149,6 @@ export function Header() {
                 <AccordionTrigger>Tratamentos</AccordionTrigger>
                 <AccordionContent>
                   {components.map((component) => (
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.href}
-                    >
-                      {component.description}
-                    </ListItem>
-                  ))}
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-3" className="px-6">
-                <AccordionTrigger>Outros</AccordionTrigger>
-                <AccordionContent>
-                  {othersComponents.map((component) => (
                     <ListItem
                       key={component.title}
                       title={component.title}

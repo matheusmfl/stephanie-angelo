@@ -71,7 +71,15 @@ export function Hero() {
           personalizados para promover sua melhor versão
         </p>
 
-        <Button>Agende seu horário</Button>
+        <Link
+          href={createWhatsAppLink({
+            message:
+              'Olá, vim pelo site! Gostaria de agendar um horário para atendimento.',
+            phoneNumber: WhatsappNumbersEnum.CLINICA,
+          })}
+        >
+          <Button className="w-full">Agende seu horário</Button>
+        </Link>
       </div>
     </>
   )
