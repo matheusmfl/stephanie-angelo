@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import stephanie from '@/assets/bg-clinic-location.jpeg'
-import { MapPin } from 'lucide-react'
-import { Button } from './ui/button'
+import Image from "next/image";
+import stephanie from "@/assets/bg-clinic-location.jpeg";
+import { MapPin } from "lucide-react";
+import { Button } from "./ui/button";
 
 export function ClinicLocation() {
   return (
@@ -13,7 +13,7 @@ export function ClinicLocation() {
           </h2>
           <span className="text-[18px] font-normal leading-[27px] text-[#4D4D4D]">
             Localização estratégica para sua comodidade e conforto. Clique no
-            botão abaixo e descubra a melhor trajeto para nossa clínica.
+            botão abaixo e descubra o melhor trajeto para nossa clínica.
           </span>
 
           <a
@@ -45,5 +45,5 @@ export function ClinicLocation() {
         </div>
       </div>
     </div>
-  )
+  );
 }
