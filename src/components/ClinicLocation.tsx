@@ -1,7 +1,7 @@
-import Image from "next/image";
-import stephanie from "@/assets/bg-clinic-location.jpeg";
-import { MapPin } from "lucide-react";
-import { Button } from "./ui/button";
+import Image from 'next/image'
+import stephanie from '@/assets/bg-clinic-location.jpeg'
+import { MapPin } from 'lucide-react'
+import { Button } from './ui/button'
 
 export function ClinicLocation() {
   return (
@@ -45,5 +45,5 @@ export function ClinicLocation() {
         </div>
       </div>
     </div>
-  );
+  )
 }

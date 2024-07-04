@@ -29,7 +29,7 @@ export function AboutStephanie() {
           </span>
 
           <Link href={'/stephanie-angelo'}>
-            <Button>Leia mais sobre a Dra. Stéfanie Angelo</Button>
+            <Button>Leia mais sobre a Dra. Stéphanie Angelo</Button>
           </Link>
         </div>
       </div>
