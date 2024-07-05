@@ -46,7 +46,7 @@ export function FormContact() {
       <div className="shadow-md rounded-md overflow-hidden flex flex-col w-full">
         <div className="flex flex-col py-6 px-4 gap-3 bg-[#1A1A1A] text-[#F4F1F0]">
           <h2 className="text-2xl">
-            FALE CONOSCO <br /> <strong>PODEMOS TE AJUDAR?</strong>
+            FALE CONOSCO! <br /> <strong>PODEMOS TE AJUDAR?</strong>
           </h2>
 
           <span className="text-base font-normal">

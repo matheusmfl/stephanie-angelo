@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 'use client'
 
 import * as React from 'react'
@@ -21,37 +22,37 @@ export const components: {
   href: string
   description: string
 }[] = [
-  {
-    title: 'Harmonização Facial',
-    href: `/services/harmonizacao-facial#${'Harmonização Facial'.replace(/\s/g, '-')}`,
-    description:
-      'Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão',
-  },
-  {
-    title: 'Harmonização Corporal',
-    href: `/services/harmonizacao-corporal#${'Harmonização Corporal'.replace(/\s/g, '-')}`,
-    description:
-      'Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes',
-  },
-  {
-    title: 'Massoterapia',
-    href: `/services/outros#${'Massoterapia'.replace(/\s/g, '-')}`,
-    description:
-      'Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e terapêuticas',
-  },
-  {
-    title: 'Jetbronze',
-    href: `/services/outros#${'Jetbronze'.replace(/\s/g, '-')}`,
-    description:
-      'O Jetbronze é um método seguro e eficaz de bronzeamento artificial que não causa danos à pele',
-  },
-  {
-    title: 'Limpeza de Pele',
-    href: `/services/outros#${'Limpeza de Pele'.replace(/\s/g, '-')}`,
-    description:
-      'Elimine impurezas, renove a sua pele e desfrute da maciez e saúde que ela merece',
-  },
-]
+    {
+      title: 'Harmonização Facial',
+      href: `/services/harmonizacao-facial#${'Harmonização Facial'.replace(/\s/g, '-')}`,
+      description:
+        'Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão',
+    },
+    {
+      title: 'Harmonização Corporal',
+      href: `/services/harmonizacao-corporal#${'Harmonização Corporal'.replace(/\s/g, '-')}`,
+      description:
+        'Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes',
+    },
+    {
+      title: 'Massoterapia',
+      href: `/services/outros#${'Massoterapia'.replace(/\s/g, '-')}`,
+      description:
+        'Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e terapêuticas',
+    },
+    {
+      title: 'Jetbronze',
+      href: `/services/outros#${'Jetbronze'.replace(/\s/g, '-')}`,
+      description:
+        'O Jetbronze é um método seguro e eficaz de bronzeamento artificial que não causa danos à pele',
+    },
+    {
+      title: 'Limpeza de Pele',
+      href: `/services/outros#${'Limpeza de Pele'.replace(/\s/g, '-')}`,
+      description:
+        'Elimine impurezas, renove a sua pele e desfrute da maciez e saúde que ela merece',
+    },
+  ]
 
 export function NavigationMenuHeader() {
   return (
@@ -75,7 +76,7 @@ export function NavigationMenuHeader() {
                         Clínica Stéphanie Angelo
                       </div>
                       <p className="text-sm  text-muted-foreground">
-                        Mais de 800 vidas transformadas
+                        Mais de 1000 vidas transformadas
                       </p>
                     </a>
                   </NavigationMenuLink>

@@ -20,14 +20,14 @@ const CoursesArray: CardCursoProps[] = [
 
   {
     imageUrl: faceup,
-    title: 'FACEUP',
+    title: 'FACEUP®',
     description:
       'Harmonizar a face apenas com toxina botulínica e preenchedores ainda não é o suficiente para alcançar resultados de excelência em rejuvenescimento facial. Neste intensivo, durante 12 horas, abordaremos os mais importantes tópicos para tornar você um profissional de sucesso na harmonização facial, agregando ainda mais resultados com o uso dos bioestimuladores de colágeno na sua rotina clínica.',
   },
 
   {
     imageUrl: perfectNose,
-    title: 'PERFECT NOSE',
+    title: 'PERFECT NOSE®',
     description:
       'Se você ainda tem medo e insegurança em realizar rinomodelação, este é o curso para você. Uma das maiores especialidades da Dra Stéphanie é rinomodelação e nós estamos aqui para virar essa chave na sua carreira. Neste intensivo, durante 12 horas, abordaremos os mais importantes tópicos para tornar você um profissional de sucesso, tendo resultados de excelência e principalmente, com segurança.',
   },

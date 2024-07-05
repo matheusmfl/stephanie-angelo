@@ -18,6 +18,7 @@ const columns = [
       'Melhora da circulação sanguínea',
       'Aumento da flexibilidade',
       'Melhora da qualidade do sono',
+      'Diminuição da retenção de líquidos',
     ],
   },
 

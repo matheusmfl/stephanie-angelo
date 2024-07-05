@@ -80,7 +80,7 @@ export default function Page() {
               Dra Stéphanie Angelo é biomédica, especialista em harmonização
               facial, com residência internacional na área e diretora da clínica
               que carrega seu nome. Ao longo destes anos, já elevou a autoestima
-              de mais de 800 pacientes e formou centenas de alunos, que hoje
+              de mais de 1000 pacientes e formou centenas de alunos, que hoje
               alcançam resultados excelentes empregando as técnicas da doutora.{' '}
               <br /> <br />
               Por ser uma amante do estudo e do conhecimento, já realizou mais

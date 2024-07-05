@@ -22,8 +22,7 @@ export default async function Page() {
           alt="Marca dágua"
         />
         <h1 className="text-[#F4F1F0] text-2xl lg:text-[48px] font-medium text-center">
-          Conheça a história de vida de <br className="hidden lg:block" />{' '}
-          nossos excelentes profissionais
+          Conheça conheça nossos profissionais
         </h1>
       </div>
 
@@ -38,10 +37,10 @@ export default async function Page() {
                 Dra Stéphanie Angelo é biomédica, especialista em harmonização
                 facial, com residência internacional na área e diretora da
                 clínica que carrega seu nome. Ao longo destes anos, já elevou a
-                autoestima de mais de 800 pacientes e formou centenas de alunos,
-                que hoje alcançam resultados excelentes empregando as técnicas
-                da Dra. Por ser uma amante do estudo e do conhecimento, já
-                realizou mais de 50 cursos nacionais e internacionais, todos
+                autoestima de mais de 1000 pacientes e formou centenas de
+                alunos, que hoje alcançam resultados excelentes empregando as
+                técnicas da Dra. Por ser uma amante do estudo e do conhecimento,
+                já realizou mais de 50 cursos nacionais e internacionais, todos
                 voltados ao estudo da harmonização e anatomia facial, e, por
                 isso, entrega resultados seguros e eficazes. Apaixonada por ver
                 o brilho nos olhos dos pacientes que se sentem mais felizes com

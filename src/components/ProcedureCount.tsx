@@ -22,15 +22,15 @@ export function ProcedureCount() {
         <div className="flex flex-col ">
           <span className="text-[40px] font-medium leading-[48px] text-center text-[#E2DBCC]">
             <strong>
-              +{isInView ? <CountUp start={0} end={800} duration={2.75} /> : 0}
+              +{isInView ? <CountUp start={0} end={1000} duration={2.75} /> : 0}
             </strong>{' '}
-            clientes
+            pacientes
           </span>
         </div>
 
         <div>
           <span className="text-lg font-normal leading-[27px] text-center text-[#F4F1F0]">
-            A confiança de mais de 800 clientes nos motiva a continuar
+            A confiança de mais de 1000 clientes nos motiva a continuar
             oferecendo o melhor atendimento sempre. Agende sua consulta e faça
             parte dessa história de sucesso.
           </span>
