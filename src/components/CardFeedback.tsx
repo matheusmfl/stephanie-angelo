@@ -9,6 +9,7 @@ export type CardFeedbackProps = {
   name: string
   message: string
   dark?: boolean
+  typeCourses?: boolean
 }
 
 export function CardFeedback({
@@ -16,6 +17,7 @@ export function CardFeedback({
   message,
   name,
   dark,
+  typeCourses,
 }: CardFeedbackProps) {
   const starsCount = Array(starsNumber).fill(dark ? darkStar : starSvg)
   return (
@@ -34,11 +36,21 @@ export function CardFeedback({
       </div>
 
       <div className="flex items-center justify-between">
-        <span
-          className={`font-semibold text-sm text-[${dark ? '#F4F1F0' : '#8F7D5E'}] line-clamp-1`}
-        >
-          {name}
-        </span>
+        <div className="flex flex-col ">
+          {typeCourses && (
+            <span
+              className={`font-semibold text-sm text-[${dark ? '#F4F1F0' : '#8F7D5E'}] line-clamp-1`}
+            >
+              Aluna
+            </span>
+          )}
+          <span
+            className={`font-semibold text-sm text-[${dark ? '#F4F1F0' : '#8F7D5E'}] line-clamp-1`}
+          >
+            {name}
+          </span>
+        </div>
+
         <div>
           <Image src={dark ? darkAspas : aspas} alt="Icon de aspas" />
         </div>

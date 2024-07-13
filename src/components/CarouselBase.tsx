@@ -9,8 +9,9 @@ import { CardFeedback, CardFeedbackProps } from './CardFeedback'
 
 type CarouselProps = {
   depoimentos: CardFeedbackProps[]
+  isCourses?: boolean
 }
-export function CarouselBase({ depoimentos }: CarouselProps) {
+export function CarouselBase({ depoimentos, isCourses }: CarouselProps) {
   return (
     <Carousel>
       <CarouselContent className="">
@@ -24,6 +25,7 @@ export function CarouselBase({ depoimentos }: CarouselProps) {
               name={depoimento.name}
               message={depoimento.message}
               dark={!!depoimento.dark}
+              typeCourses={isCourses}
             />
           </CarouselItem>
         ))}

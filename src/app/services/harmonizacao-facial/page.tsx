@@ -42,28 +42,28 @@ const columns = [
     imageUrl: imgPreenchimentoLabial,
     title: 'Preenchimento labial',
     description:
-      'Nosso preenchimento labial utiliza ácido hialurônico para aumentar o volume, definir o contorno e corrigir assimetrias dos lábios.',
+      'O preenchimento labial utiliza ácido hialurônico para aumentar o volume, definir o contorno e corrigir assimetrias dos lábios.',
   },
 
   {
     imageUrl: imgOlheiras,
     title: 'Preenchimento de olheiras',
     description:
-      'Nosso preenchimento de olheiras emprega ácido hialurônico para reduzir olheiras profundas e escuras, proporcionando um olhar mais jovem e descansado.',
+      'O preenchimento de olheiras emprega ácido hialurônico para reduzir olheiras profundas e escuras, proporcionando um olhar mais jovem e descansado.',
   },
 
   {
     imageUrl: imgMandibulas,
     title: 'Preenchimento de mandíbula',
     description:
-      'Nosso preenchimento de mandíbula utiliza ácido hialurônico para definir o contorno, projetar o ângulo e harmonizar o perfil facial.',
+      'O preenchimento de mandíbula utiliza ácido hialurônico para definir o contorno, projetar o ângulo e harmonizar o perfil facial.',
   },
 
   {
     imageUrl: imgMento,
     title: 'Preenchimento de mento (queixo)',
     description:
-      'Nosso preenchimento de mento (queixo) utiliza ácido hialurônico para aumentar o volume, projetar e harmonizar, remodelando o perfil facial.',
+      'O preenchimento de mento (queixo) utiliza ácido hialurônico para aumentar o volume, projetar e harmonizar, remodelando o perfil facial.',
   },
 
   {

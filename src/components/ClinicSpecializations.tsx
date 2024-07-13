@@ -75,19 +75,19 @@ export function ClinicSpecializations() {
         <div className="flex flex-row flex-wrap gap-20 items-center justify-center z-20 relative">
           <CardComponent
             title="Harmonização facial"
-            subtitle="Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão"
+            subtitle="Conjunto de procedimentos, com técnicas exclusivas nossas, que equilibram os elementos da face, tratando imperfeições como linhas de expressão, trazendo beleza e rejuvenescimento"
             type="card01"
           />
 
           <CardComponent
             title="Harmonização corporal"
-            subtitle="Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes"
+            subtitle="Técnicas exclusivas da clínica que visam remodelar seu corpo, eliminar gorduras localizadas, tratar flacidez corporal, aumentar o tônus muscular, tratar estrias e imperfeições com resultados eficazes"
             type="card02"
           />
 
           <CardComponent
             title="Massoterapia"
-            subtitle="Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e terapêuticas"
+            subtitle="Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e melhora no contorno corporal com técnicas exclusivas de massagens modeladoras e drenagens linfáticas."
             type="card03"
           />
 

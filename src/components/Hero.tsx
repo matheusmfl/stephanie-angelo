@@ -2,6 +2,7 @@
 import image1 from '@/assets/stephanie-bg-hero.webp'
 import image2 from '@/assets/hero-02.jpg'
 import image3 from '@/assets/hero-03.jpg'
+import image4 from '../../public/teamIntroduction.jpeg'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { Button } from './ui/button'
@@ -13,7 +14,7 @@ import {
 
 export function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const images = [image1, image2, image3]
+  const images = [image1, image2, image3, image4]
 
   useEffect(() => {
     const timer = setInterval(() => {

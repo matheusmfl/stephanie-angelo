@@ -37,30 +37,36 @@ const depoiments: CardFeedbackProps[] = [
   {
     starsNumber: 5,
     message:
-      'Sempre tive medo de fazer procedimento estético no rosto...mas depois que conheci a Clínica e o trabalho da Dra Stéphanie, minha visão sobre procedimentos mudou completamente. Você já se sente especial na recepção. Ela tem um carinho,  respeito e o profissionalismo incrível com suas clientes.',
-    name: 'Juliana Severo',
+      'Oie! Quero te agradecer melhor, pq sou envergonhada, né. 🤣 Sensacional o teu curso, obrigada por nos passar teu conhecimento, por transferir tantas informações mega importantes, por passar confiança e, NOSSA, tu foi e é muito incrível, como profissional e pessoa, só tenho coisas boas para falar de ti.Adorei te conhecer e aprender muito contigo, mesmo! Mais uma vez, tu é incrível e linda né!! Obrigada por esse final de semana intenso de aprendizado🥰❤️',
+    name: 'Dra Lauren Machado',
     dark: true,
   },
 
   {
     starsNumber: 5,
     message:
-      'Foi a melhor decisão da minha vida. O meu único arrependimento é não ter feito antes. A experiência por completo é incrível, toda equipe é um amor, simpáticas e extremamente atenciosas. O procedimento transformou todas as áreas da minha vida. Eu recomendo 100%.',
-    name: 'Isadora Quadros',
+      'Cheguei em casa e vinha pensando na estrada o privilégio que tivemos ao nos deparáramos com essa profissional. Eu Entrei uma ontem e saí outra Daiane daí, mais confiante sem medo, pronta para te honrar @Clínica Dra Stéphanie Angelo Obrigada por TUDOOO',
+    name: 'Dra Daiane Magalhães',
     dark: true,
   },
   {
     starsNumber: 5,
     message:
-      'Atendimento impecável! Equipe super atenciosa! A Dra Stephanie que, além de  linda e querida, é extremamente competente. É uma profissional que passa tranquilidade e segurança no que faz. Simplesmente a melhor!!!',
-    name: 'Dani Garcia',
+      'Foi intenso, foi desafiador foi transformador: realmente prof @dra.stephanieangelo não saímos os mesmos! São dois dias que parecem uma semana! MAs aprendemos com êxito, entendemos a técnica, praticamos, vencemos nossos medos e inseguranças, aprendemos o que é estética de verdade, com uma profissional incrível, que faz o que ama e ensina com amor! Obrigada por nos inspirar diariamente e esse curso superou nossas expectativas! Tu és uma profissional maravilhosa e um ser humano com um coração gigante! Tenho orgulho da profissional que te tornaste!obrigada Grzi, Maitê e Manu por todo o suporte e apoio! E obrigada aos meus já amigos @leonardo.bckr e @luizadalmoro.biomedica esse curso foi tão incrível pq vocês também estavam lá! Obrigada pela parceria e amizade que iniciamos nestes dois dias, adorei conhecer vocês! Enfim, não tenho palavras para descrever a minha felicidade! É apenas o começo! ✨💚',
+    name: 'Dra Carolina Wallauer',
     dark: true,
   },
   {
     starsNumber: 5,
     message:
-      'Foi incrível, desde que a recepção nos atende na porta, nos mimos que recebemos enquanto esperamos, ambiente gostoso, e o atendimento da Dra Stefany chega como a cereja do bolo, que nos proporciona muitos momentos satisfatórios e o trabalho impecável. Meu marido e minhas duas filhas são clientes!',
-    name: 'Andreia Canuto',
+      '@Dra Stéphanie Angelo Muito obrigada por mais um curso maravilhoso teu, com certeza eu vou voltar mais vezes, como te digo teus cursos são um divisor de águas pois a segurança que tu passa para a gente consegui aplicar é surreal, muito obrigada! 💖💖',
+    name: 'Dra Ana Paula Giacomini',
+    dark: true,
+  },
+  {
+    starsNumber: 5,
+    message: 'Entrei aí uma profissional e sí outra. Sou muito grata! Sério!',
+    name: 'Dra Djulian Muller',
     dark: true,
   },
 ]
@@ -113,7 +119,7 @@ export default function Page() {
             alt="Marca dágua"
           />
 
-          <CarouselBase depoimentos={depoiments} />
+          <CarouselBase depoimentos={depoiments} isCourses={true} />
         </div>
       </section>
       <FormContact />
