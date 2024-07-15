@@ -7,12 +7,21 @@ import { urlForImage } from '../../../sanity/lib/image'
 import Link from 'next/link'
 import aboutStephanie from '../../../public/aboutStephanie.webp'
 
+import aboutProfissionais from '../../../public/teamIntroduction.jpeg'
+
 export const revalidate = 60
 
 export default async function Page() {
   const profissionais = await listProfessional()
   return (
     <main className="flex flex-col">
+      <div className="relative h-[298px] md:h-[480px] w-full overflow-hidden">
+        <Image
+          src={aboutProfissionais}
+          className="absolute lg:-translate-y-52"
+          alt="nossos profissionais"
+        />
+      </div>
       <div className="px-6 py-16 lg:py-32 lg:px-20 bg-black relative overflow-hidden">
         <Image
           src={marcaDagua}

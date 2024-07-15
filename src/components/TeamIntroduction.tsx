@@ -18,7 +18,7 @@ export function TeamIntroduction() {
         />
       </div>
       <div className="lg:px-20 px-6 py-12 lg:py-0 h-full flex flex-col justify-center gap-6">
-        <h2 className="text-[32px] lg:text-[48px] font-medium leading-[58px] text-[#8F7D5E]">
+        <h2 className="text-[32px] lg:text-[48px] font-medium leading-[40px] text-[#8F7D5E]">
           Prontos para te receber
         </h2>
 
