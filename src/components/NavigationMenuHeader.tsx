@@ -48,7 +48,7 @@ export const components: {
     },
     {
       title: 'Limpeza de Pele',
-      href: `/services/outros#${'Limpeza de Pele'.replace(/\s/g, '-')}`,
+      href: `/services/outros#${'Limpeza de pele'.replace(/\s/g, '-')}`,
       description:
         'Elimine impurezas, renove a sua pele e desfrute da maciez e saúde que ela merece',
     },
