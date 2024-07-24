@@ -15,7 +15,7 @@ const columns = [
     imageUrl: imgMapeamentoFacial,
     title: 'Mapeamento facial',
     description:
-      'Nosso mapeamento facial é o ponto de partida para uma harmonização personalizada e eficaz. Analisamos minuciosamente seu rosto para identificar suas necessidades específicas e planejar o tratamento ideal para você.',
+      'O mapeamento facial é o ponto de partida para uma harmonização personalizada e eficaz. Analisamos minuciosamente seu rosto para identificar suas necessidades específicas e planejar o tratamento ideal para você.',
   },
 
   {
@@ -77,7 +77,7 @@ const columns = [
     imageUrl: imgSkinBooster,
     title: 'Skinbooster',
     description:
-      'Nosso Skinbooster utiliza ácido hialurônico para hidratar profundamente a pele, promovendo firmeza, elasticidade e luminosidade.',
+      'O Skinbooster utiliza ácido hialurônico para hidratar profundamente a pele, promovendo firmeza, elasticidade e luminosidade.',
   },
 ]
 
