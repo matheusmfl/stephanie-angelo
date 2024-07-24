@@ -41,7 +41,7 @@ export function ServicesSection({
       </div>
       <div className="flex h-full w-full items-center justify-center">
         <div className="lg:px-20 w-full h-full px-6 py-11 lg:py-0 flex flex-col gap-6 lg:justify-center">
-          <h2 className="text-[#8F7D5E] font-semibold text-[32px] lg:text-[48px] leading-[38px] ">
+          <h2 className="text-[#8F7D5E] font-semibold text-[28px] lg:text-[48px] leading-[48px] ">
             {title}
           </h2>
 
@@ -53,7 +53,10 @@ export function ServicesSection({
             {listItems && (
               <ol className="text-[18px] leading-[27px] text-justify text-[#4D4D4D]">
                 {listItems.map((item, index) => (
-                  <li className="list-disc ml-1" key={index}>
+                  <li
+                    className={` ml-1 ${isIndexOdd ? 'list-disc' : 'text-right'}`}
+                    key={index}
+                  >
                     {item}
                   </li>
                 ))}

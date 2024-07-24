@@ -30,7 +30,7 @@ export function ProcedureCount() {
 
         <div>
           <span className="text-lg font-normal leading-[27px] text-center text-[#F4F1F0]">
-            A confiança de mais de 1000 clientes nos motiva a continuar
+            A confiança de mais de 1000 pacientes nos motiva a continuar
             oferecendo o melhor atendimento sempre. Agende sua consulta e faça
             parte dessa história de sucesso.
           </span>

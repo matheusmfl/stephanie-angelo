@@ -19,9 +19,9 @@ const columns = [
       'Protocolo que visa restaurar a simetria e firmeza do glúteo agindo em 3 aspectos:',
     imageUrl: gluteo,
     listItems: [
-      'Melhora do aspecto geral, tratamento multicamadas',
-      'Melhora da flacidez e firmeza com aplicação dos bioestimuladores de colágeno',
-      'Correção e volumização de assimetrias com preenchimento a base de ácido hialurônico.',
+      'Melhorando o aspecto geral, tratando as multicamadas.',
+      'Melhorando a flacidez e firmeza com aplicação dos bioestimuladores de colágeno.',
+      'Corrigindo e volumizando assimetrias com preenchimento a base de ácido hialurônico.',
     ],
   },
 

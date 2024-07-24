@@ -29,7 +29,7 @@ export function AboutStephanie() {
           </span>
 
           <Link href={'/stephanie-angelo'}>
-            <Button type="button" className="w-full lg:w-fit">
+            <Button className="w-full lg:w-fit">
               Leia mais sobre a Dra. Stéphanie Angelo
             </Button>
           </Link>

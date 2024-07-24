@@ -87,7 +87,7 @@ export function ClinicSpecializations() {
 
           <CardComponent
             title="Massoterapia"
-            subtitle="Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e melhora no contorno corporal com técnicas exclusivas de massagens modeladoras e drenagens linfáticas."
+            subtitle="Ganhe qualidade de vida promovendo seu bem-estar físico e mental com massagens relaxantes e melhora no contorno corporal com técnicas exclusivas de massagens modeladoras e drenagens linfáticas"
             type="card03"
           />
 
