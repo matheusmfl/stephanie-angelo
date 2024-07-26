@@ -22,7 +22,7 @@ const columns = [
     imageUrl: imgBioestimuladores,
     title: 'Bioestimuladores de colágeno',
     description:
-      'Nossos bioestimuladores de colágeno ativam naturalmente a produção de colágeno na pele, proporcionando firmeza, elasticidade e hidratação. Ideal para rugas, linhas de expressão e flacidez.',
+      'Os bioestimuladores de colágeno ativam naturalmente a produção de colágeno na pele, proporcionando firmeza, elasticidade e hidratação. Ideal para rugas, linhas de expressão e flacidez.',
   },
 
   {
@@ -36,7 +36,7 @@ const columns = [
     imageUrl: imgFiosLisos,
     title: 'Fios lisos de PDO',
     description:
-      'Nossos fios lisos de PDO são feitos de polidioxanona, um material biocompatível e absorvível pelo corpo. Eles são projetados para estimular a produção de colágeno, proporcionando firmeza e sustentação à pele, além de tratar rugas, linhas de expressão e flacidez.',
+      'Os fios lisos de PDO são feitos de polidioxanona, um material biocompatível e absorvível pelo corpo. Eles são projetados para estimular a produção de colágeno, proporcionando firmeza e sustentação à pele, além de tratar rugas, linhas de expressão e flacidez.',
   },
   {
     imageUrl: imgPreenchimentoLabial,
