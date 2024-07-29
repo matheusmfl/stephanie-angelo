@@ -13,6 +13,6 @@ export function createWhatsAppLink({
   phoneNumber,
 }: createWhatsappLink) {
   const encodedMessage = encodeURIComponent(message)
-  const whatsappLink = `https://wa.me/send?phone=${phoneNumber}&text=${encodedMessage}`
+  const whatsappLink = `https://wa.me/${phoneNumber}&text=${encodedMessage}`
   return whatsappLink
 }
