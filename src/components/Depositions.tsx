@@ -70,7 +70,7 @@ export function Depositions() {
           <Link
             href={createWhatsAppLink({
               message:
-                ' Olá, vim pelo site! Gostaria de agendar um horário para atendimento.',
+                'Olá, vim pelo site! Gostaria de agendar um horário para atendimento.',
               phoneNumber: WhatsappNumbersEnum.CLINICA,
             })}
           >

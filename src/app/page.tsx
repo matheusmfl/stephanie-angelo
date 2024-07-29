@@ -12,6 +12,10 @@ import { ProcedureCount } from '@/components/ProcedureCount'
 import { TeamIntroduction } from '@/components/TeamIntroduction'
 
 export default function Home() {
+  const message = 'OLA MUNDO< EU VIM PRA RESOLVER ESSA BOSTA'
+  const encodedMessage = encodeURIComponent(message)
+
+  console.log(encodedMessage)
   return (
     <div className="overflow-x-hidden">
       <Hero />
