@@ -48,10 +48,20 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="pt-8 flex items-center justify-center">
+      <div className="pt-8 flex flex-col gap-5 items-center justify-center">
         <span className={'text-sm font-normal text-[#4D4D4D]'}>
           &copy; 2024 Dra.Stephanie Angelo, todos os direitos reservados
         </span>
+
+        <div className="flex flex-col gap-2">
+          <span className={'text-sm font-normal text-[#4D4D4D]'}>
+            Clínica Dra Stéphanie Angelo LTDA
+          </span>
+
+          <span className={'text-sm font-normal text-[#4D4D4D]'}>
+            CNPJ 42.005.433/0001-80
+          </span>
+        </div>
       </div>
     </footer>
   )
