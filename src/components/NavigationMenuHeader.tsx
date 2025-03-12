@@ -101,7 +101,7 @@ export function NavigationMenuHeader() {
               Tratamentos
             </NavigationMenuTrigger>
             <NavigationMenuContent className="bg-[#F4F1F0]">
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              <ul className="grid w-full gap-3 p-4  md:grid-cols-2 ">
                 {components.map((component) => (
                   <ListItem
                     key={component.title}

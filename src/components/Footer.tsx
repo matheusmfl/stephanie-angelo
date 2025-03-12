@@ -53,7 +53,7 @@ export function Footer() {
           &copy; 2024 Dra.Stephanie Angelo, todos os direitos reservados
         </span>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col items-center justify-center gap-2">
           <span className={'text-sm font-normal text-[#4D4D4D]'}>
             Clínica Dra Stéphanie Angelo LTDA
           </span>
