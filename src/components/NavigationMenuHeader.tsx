@@ -101,13 +101,13 @@ export function NavigationMenuHeader() {
               Tratamentos
             </NavigationMenuTrigger>
             <NavigationMenuContent className="bg-[#F4F1F0]">
-              <ul className="flex w-[400px] gap-3 p-4 ">
+              <ul className="flex w-[500px] gap-3 p-4 ">
                 {components.map((component) => (
                   <ListItem
                     key={component.title}
                     title={component.title}
                     href={component.href}
-                    className={"w-[400px]"}
+                    className={"w-[500px]"}
                   >
                     {component.description}
                   </ListItem>
